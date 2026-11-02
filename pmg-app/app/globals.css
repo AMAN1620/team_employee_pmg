@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    @apply bg-canvas text-ink antialiased;
+    font-family: Inter, system-ui, sans-serif;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  .icon-fill {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-line rounded-xl shadow-card;
+  }
+  .card-hover {
+    @apply transition-shadow hover:shadow-card-hover hover:border-teal/20;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-lg text-label-md font-medium transition-all active:scale-[0.99] disabled:opacity-50 disabled:pointer-events-none whitespace-nowrap;
+  }
+  .btn-sm {
+    @apply h-8 px-3 text-label-sm;
+  }
+  .btn-primary {
+    @apply btn bg-teal text-white hover:bg-teal-hover;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-ink border border-line hover:bg-canvas hover:border-slate-300;
+  }
+  .btn-kudos {
+    @apply btn bg-violet text-white hover:bg-violet-hover;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent text-muted hover:text-ink hover:bg-slate-100;
+  }
+  .btn-danger {
+    @apply btn bg-white text-rose-700 border border-rose-200 hover:bg-rose-50;
+  }
+  .input {
+    @apply w-full h-10 px-3 bg-white border border-line rounded-lg text-body-md text-ink placeholder:text-slate-400 focus:outline-none focus:border-teal focus:ring-[3px] focus:ring-teal/15;
+  }
+  .textarea {
+    @apply input h-auto py-2 min-h-[88px];
+  }
+  .label {
+    @apply block text-label-sm text-muted mb-1.5 uppercase tracking-wide;
+  }
+  .section-title {
+    @apply text-headline-sm text-ink;
+  }
+  .page-title {
+    @apply text-headline-lg text-ink;
+  }
+  .muted {
+    @apply text-muted;
+  }
+}

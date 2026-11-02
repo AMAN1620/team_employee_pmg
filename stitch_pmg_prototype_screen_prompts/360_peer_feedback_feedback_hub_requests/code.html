@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#8a4cfc","inverse-primary":"#80d5cb","on-primary-fixed":"#00201d","on-secondary-container":"#fffbff","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb598","tertiary-fixed":"#ffdbce","surface-container-lowest":"#ffffff","primary-fixed-dim":"#80d5cb","error-container":"#ffdad6","on-surface":"#0b1c30","surface-container":"#e5eeff","surface-tint":"#006a63","on-primary":"#ffffff","secondary-fixed":"#eaddff","surface-container-low":"#eff4ff","error":"#ba1a1a","primary-fixed":"#9cf2e8","primary-container":"#0f766e","on-primary-container":"#a3faef","surface-bright":"#f8f9ff","tertiary-container":"#9c573a","surface-variant":"#d3e4fe","secondary":"#712ae2","on-error-container":"#93000a","outline-variant":"#bdc9c6","on-secondary":"#ffffff","inverse-surface":"#213145","on-background":"#0b1c30","on-secondary-fixed":"#25005a","on-error":"#ffffff","surface-container-high":"#dce9ff","primary":"#005c55","tertiary":"#7f4025","outline":"#6e7977","on-tertiary-fixed":"#370e00","on-secondary-fixed-variant":"#5a00c6","secondary-fixed-dim":"#d2bbff","surface-dim":"#cbdbf5","on-surface-variant":"#3e4947","surface-container-highest":"#d3e4fe","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#72361b","background":"#f8f9ff","on-tertiary-container":"#ffe5db","on-primary-fixed-variant":"#00504a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem","space-xl":"2rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"headline-sm":["Inter"],"pill-tag":["Inter"],"headline-lg":["Inter"],"display-lg":["Inter"],"title-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"]},fontSize:{"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}],"pill-tag":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[248px] bg-surface-container-lowest border-r border-[#E2E8F0] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-[#E2E8F0]"><img alt="PMG Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XLIvSLXm27pPW0j3ciblrAyAXB51gEaNkixrTJGzSXRPQ7yGDv_hShomgPmqPh_zh12uOOUWofittX2SrVoWZstPSII2e6nvTnXj-5-vhwglp7v_F-Yws77G2pWE-DC0kt03fwUF8RWU8XTIIIL8azZyX1DmqEfrbISsO3GSeQLeuCBvzaUJ89Rdxk0ojlljvz0r-CNUoZMSdn-P4j_h0wBghffDy-74Zg2wkWdkHrCA"/><span class="font-title-md text-title-md text-on-surface tracking-tight font-semibold">PMG</span></div><nav class="p-space-sm space-y-1 flex-1" data-active-classes="bg-[#EDE9FE]/50 text-secondary font-semibold"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="goals" href="#">Goals</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="check-ins" href="#">Check-ins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="blockers" href="#">Blockers</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="wins" href="#">Wins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="one-on-ones" href="#">1:1s</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="feedback" href="#">Feedback</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reviews" href="#">Reviews</a></nav></div><div class="p-space-sm border-t border-[#E2E8F0] bg-surface-container-lowest"><div class="p-space-sm rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-colors"><div class="flex items-center gap-space-sm"><img alt="Ananya Rao" class="w-9 h-9 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/><div class="flex-1 min-w-0"><div class="flex items-center justify-between gap-1"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ananya Rao</span><span class="px-1.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">Employee</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Product Analyst</p></div></div><div class="mt-space-sm pt-space-xs border-t border-[#E2E8F0]/60 flex items-center justify-between"><a class="font-label-sm text-label-sm text-primary-container hover:underline inline-flex items-center gap-0.5" href="#"><span>Switch role</span><span class="material-symbols-outlined text-[14px]">swap_horiz</span></a></div></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-surface-container-lowest border-b border-[#E2E8F0] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm w-full max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-lowest border border-[#E2E8F0] rounded-lg text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search goals, team, blockers..." type="text"/><div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container-low text-on-surface-variant border border-[#E2E8F0] rounded text-[11px] font-medium font-mono">⌘K</kbd></div></div></div><div class="flex items-center gap-space-md"><button class="h-10 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-medium rounded-lg flex items-center gap-space-xs transition-all shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Check in</span></button><button aria-label="Notifications" class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-[#BE123C] rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center pl-space-xs border-l border-[#E2E8F0]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Ensure Active Nav highlights 'Feedback' via script -->
+<script>
+    (function () {
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach((link) => {
+        if (link.getAttribute('data-path') === 'feedback') {
+          link.className =
+            'flex items-center px-space-md py-space-sm rounded-lg bg-[#EDE9FE]/50 text-secondary font-semibold font-label-md text-label-md transition-colors';
+        } else {
+          link.className =
+            'flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors';
+        }
+      });
+    })();
+  </script>
+<!-- Main Viewport Content Area -->
+<div class="px-space-xl py-space-lg max-w-[1440px] w-full mx-auto space-y-space-xl">
+<!-- Breadcrumbs & Header Section -->
+<section class="space-y-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Reviews</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Mid-Year FY27</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">360 Peer Feedback</span>
+</nav>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">360 Feedback Hub</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309]">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+              Closes in 4 days (Nov 24)
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">
+              FY27 Mid-Year Cycle
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Give and request constructive peer reviews to support promotion calibration, growth rubrics, and sprint impact.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-10 px-space-md bg-surface-container-lowest text-on-surface hover:bg-surface-container-low rounded-lg font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all hover:shadow" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">person_add</span>
+<span>+ Request Peer Feedback</span>
+</button>
+<button class="h-10 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-space-xs shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+<span>Draft Feedback</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Metrics & Pacing Ribbon (Bento Strip) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stat 1: Assigned to Complete -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Your Queue</p>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">1 Pending</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 3 Assigned</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-[#FEF3C7] text-[#B45309] flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">assignment_late</span>
+</div>
+</div>
+<div class="mt-space-md space-y-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Pacing (2 Submitted)</span>
+<span class="font-semibold text-primary">66%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 66%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-[#B45309] truncate pt-0.5">Karan Shah review due in 2 days</p>
+</div>
+</div>
+<!-- Stat 2: Feedback Received -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Feedback Received</p>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">5 of 5</span>
+<span class="inline-flex items-center font-label-sm text-label-sm text-[#15803D] bg-[#DCFCE7] px-1.5 py-0.2 rounded-full font-semibold">100%</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-[#DCFCE7] text-[#15803D] flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between">
+<div>
+<div class="flex items-center gap-1 font-title-md text-title-md text-on-surface font-bold">
+<span>4.20</span>
+<span class="text-on-surface-variant text-[13px] font-normal">/ 5.0</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Composite peer score</p>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">High Advocacy</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ready for panel</p>
+</div>
+</div>
+</div>
+<!-- Stat 3: Cross-Team Diversity -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cross-Team Mix</p>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">3 Pods</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Balanced</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-[#EDE9FE] text-[#7C3AED] flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-center gap-1 text-[11px] font-semibold text-on-surface-variant mb-1.5">
+<span class="text-primary">Eng (3)</span> · 
+            <span class="text-secondary">Design (1)</span> · 
+            <span class="text-[#0F766E]">Product (1)</span>
+</div>
+<!-- Stacked segment meter -->
+<div class="h-2 w-full flex rounded-full overflow-hidden bg-surface-container gap-0.5">
+<div class="bg-primary h-full" style="width: 60%;" title="Engineering (3)"></div>
+<div class="bg-secondary-container h-full" style="width: 20%;" title="Design (1)"></div>
+<div class="bg-primary-container h-full" style="width: 20%;" title="Product (1)"></div>
+</div>
+<p class="font-body-sm text-body-sm text-[#15803D] pt-1">Optimal 360 cohort diversity</p>
+</div>
+</div>
+<!-- Stat 4: Cycle Countdown & Next Steps -->
+<div class="bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Calibration Timeline</p>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Nov 28</span>
+<span class="font-label-sm text-label-sm text-[#BE123C] font-semibold">starts in 8d</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">event_upcoming</span>
+</div>
+</div>
+<div class="mt-space-md pt-2 space-y-1">
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#15803D] animate-pulse"></span>
+<span>Self-Appraisal Locked</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Committee reviews peer dossiers automatically.</p>
+</div>
+</div>
+</section>
+<!-- Interactive Filter & Segment Tabs -->
+<section class="border-b border-surface-container">
+<div class="flex items-center gap-space-lg overflow-x-auto" id="peerReviewTabs">
+<button class="tab-btn pb-3 px-1 font-label-md text-label-md font-semibold text-primary border-b-2 border-primary flex items-center gap-2 whitespace-nowrap" data-tab="received" type="button">
+<span>Feedback Received About You</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/10 text-primary-container text-pill-tag font-pill-tag">5</span>
+</button>
+<button class="tab-btn pb-3 px-1 font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent flex items-center gap-2 whitespace-nowrap" data-tab="assigned" type="button">
+<span>Pending Requests for You</span>
+<span class="px-2 py-0.5 rounded-full bg-[#FEF3C7] text-[#B45309] text-pill-tag font-pill-tag">1 Urgent</span>
+</button>
+<button class="tab-btn pb-3 px-1 font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent flex items-center gap-2 whitespace-nowrap" data-tab="submitted" type="button">
+<span>Submitted by You</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-pill-tag font-pill-tag">2</span>
+</button>
+<button class="tab-btn pb-3 px-1 font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent flex items-center gap-2 whitespace-nowrap" data-tab="requested" type="button">
+<span>Your Sent Requests</span>
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#15803D] text-pill-tag font-pill-tag">5 Complete</span>
+</button>
+</div>
+</section>
+<!-- Main Content 2-Column Grid (Content + Ancillary Rail) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Primary Column (8 Cols) -->
+<div class="lg:col-span-8 space-y-space-xl">
+<!-- Action Required Callout: Pending Request for Karan Shah -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border-l-4 border-l-[#B45309] relative overflow-hidden space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-md">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm shrink-0" data-alt="Warm studio photographic portrait of Karan Shah, South Asian male Lead Product Designer wearing glasses and dark charcoal sweater against softly lit interior studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4qDtdjoqu_AdkQLqqjDrFiL1rF6UpDYQIw28NQm1gHvVgqnwi5T6tOAxMQKC1LGOn5D21v10htPQNsjOO03vM-pq0YpC05vkAGLwD68gasSmMRDUVODeWipRfRaUGy3BeIQUpI9zp8x732uDTKY7WavHjFE6gFUjPNpT2MJXU31nCDWAm5LrZJBF3nwPtFM-1Z0lk6EswU8CS-y5hEocd3zQWAohs5D4J9xVRewS4"/>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Review Karan Shah</h2>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-[#7C3AED]">L6 Staff Promotion Nominee</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#FFE4E6] text-[#BE123C] font-semibold">Due in 2 days</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Lead Product Designer · Design Systems &amp; Core Checkout Pod</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimated: <strong class="text-on-surface font-semibold">~10 mins</strong></span>
+</div>
+</div>
+<!-- Prompt Box -->
+<div class="bg-surface-container-low/70 p-space-md rounded-lg space-y-1">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">help</span>
+<span>Requested Focus Areas</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              “Please evaluate collaboration on the FY27 Design System Tokens migration, multi-tenant checkout redesign, and our joint cross-functional trade-off discussions.”
+            </p>
+</div>
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span>
+<span>Scores anonymized in committee aggregation. Peer review rubric applies.</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-9 px-space-sm text-on-surface-variant hover:text-error hover:bg-surface-container font-label-md text-label-md rounded-lg transition-colors" type="button">
+                Decline with Reason
+              </button>
+<button class="h-9 px-space-md bg-primary-container hover:bg-[#115E59] text-on-primary font-label-md text-label-md font-semibold rounded-lg flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span>Complete Review Form</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section: Feedback Synthesis & Breakout Radar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container-low">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Feedback Received About You</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aggregated synthesis from 5 cross-functional peer reviews for Mid-Year FY27</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Confidentiality:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] font-semibold">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span>
+                Audited &amp; De-identified
+              </span>
+</div>
+</div>
+<!-- Score Card & SVG Radar / Metric Pills -->
+<div class="bg-surface-container-low/40 rounded-xl p-space-lg flex flex-col md:flex-row items-center gap-space-xl">
+<!-- Score Ring Visualizer -->
+<div class="flex flex-col items-center justify-center shrink-0 w-44 text-center">
+<div class="relative w-28 h-28 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<circle class="text-surface-container" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-width="8"></circle>
+<!-- 84% filled (4.20 / 5.0) circumference = 251.32 -->
+<circle class="text-primary-container" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.32" stroke-dashoffset="40.2" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">4.20</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">out of 5.0</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md font-bold text-[#15803D]">Exceptional Contributor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Top 8th percentile of squad</span>
+</div>
+<!-- Competency Breakdown Bars -->
+<div class="flex-1 w-full space-y-space-sm">
+<!-- Bar 1 -->
+<div>
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-1">
+<span class="font-semibold text-on-surface flex items-center gap-1.5">
+<span>Ownership &amp; Incident Triage</span>
+<span class="material-symbols-outlined text-primary text-[15px]" title="Recognized for P0 Billing Outage">military_tech</span>
+</span>
+<span class="font-bold text-primary">4.6 / 5.0</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all" style="width: 92%;"></div>
+</div>
+</div>
+<!-- Bar 2 -->
+<div>
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-1">
+<span class="font-semibold text-on-surface">Cross-functional Collaboration</span>
+<span class="font-bold text-secondary">4.5 / 5.0</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full transition-all" style="width: 90%;"></div>
+</div>
+</div>
+<!-- Bar 3 -->
+<div>
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-1">
+<span class="font-semibold text-on-surface">Communication &amp; Stakeholder Alignment</span>
+<span class="font-bold text-on-surface">4.1 / 5.0</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all" style="width: 82%;"></div>
+</div>
+</div>
+<!-- Bar 4 -->
+<div>
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-1">
+<span class="font-semibold text-on-surface">Technical Delivery &amp; Architecture</span>
+<span class="font-bold text-on-surface-variant">3.9 / 5.0</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-outline rounded-full transition-all" style="width: 78%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Peer Review Cards Feed -->
+<div class="space-y-space-md pt-space-xs">
+<!-- Review 1: Priya Sharma -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-low hover:shadow-md transition-shadow space-y-space-sm">
+<div class="flex items-start justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-surface-container" data-alt="Professional headshot of Priya Sharma, Indian female Senior Frontend Engineer smiling warmly with soft ambient studio lighting wearing teal blouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChcpVHIxnrKVHVY4irUJY1PzNlf6YzBgrmWBH7jqQTf5WxyN8nofWFb04nlAZdlsl_rfaMl4UulcldAdNXKxdkb0jiyZYEsE1sdAjaN-jjl4lZvThJ0HrVaq0DQirr071mOHHjv0sKSGyIh4ljfIxRVXyS6bBYFe6XeDIvFXyH2hv2b51jMLwl0mZIDxaGGLz1GOy5cF4KeEreKjVZumglHi3PXTiSJpMawkFDFYnF"/>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Priya Sharma</h3>
+<span class="px-2 py-0.2 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">Verified Peer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Senior Frontend Engineer · Platform Web Core</p>
+</div>
+</div>
+<div class="flex items-center gap-1 text-[#B45309] font-label-md text-label-md font-semibold bg-[#FEF3C7]/60 px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span>4.8 Rating</span>
+</div>
+</div>
+<!-- Review Body -->
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                “Ananya was truly exceptional during the Q2 billing incident triage. She isolated the telemetry failure and unblocked client engineers within minutes, preventing a multi-hour SLA breach. Her documentation and post-mortem breakdown set a new standard for our pod.”
+              </p>
+<!-- Tags & Strengths -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] font-semibold">High Ownership</span>
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-[#7C3AED] font-semibold">Resilient Under Pressure</span>
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">Incident Triage</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submitted Nov 18 · Mid-Year 360</span>
+</div>
+</div>
+<!-- Review 2: Marcus Chen -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-low hover:shadow-md transition-shadow space-y-space-sm">
+<div class="flex items-start justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-surface-container" data-alt="Portrait of Marcus Chen, East Asian male Backend Tech Lead with crisp modern glasses, seated in a contemporary technology workspace with warm natural illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_M_tbjUMopwRYHcqfdPG8v0xbVgU5TyMshjb1p8rDqCYGm3JiRGsjR0HNDZ09Flu72w0Mq0KNYjuDZJjrqIVLcQpqEDooAQfWGF2QtUOaMrv0GFFL8cyja6uUPjo5yXoCF4ayhmxzoYp7kF_pgu58nQ3QHeSZdkrGIoOvIW-7fGHz2JNg6zj-VCZdV46Ju4dFZjbOQT45jXOv_-hWeeHNrLm3az-IBwUHa6e3Lc3z"/>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Marcus Chen</h3>
+<span class="px-2 py-0.2 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">Verified Peer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Staff Backend Engineer · Data &amp; Infrastructure</p>
+</div>
+</div>
+<div class="flex items-center gap-1 text-[#B45309] font-label-md text-label-md font-semibold bg-[#FEF3C7]/60 px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span>4.5 Rating</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                “Solid analytical clarity. When our data pipeline stalled due to permission lags across IAM clusters, Ananya proactively organized a work-around and drafted the temporary ETL bridge so product metrics remained uninterrupted. Very reliable partner.”
+              </p>
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] font-semibold">Proactive Problem Solver</span>
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">System Thinking</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submitted Nov 16 · Mid-Year 360</span>
+</div>
+</div>
+<!-- Review 3: Karan Shah -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-low hover:shadow-md transition-shadow space-y-space-sm">
+<div class="flex items-start justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-surface-container" data-alt="Headshot of Karan Shah, Indian Lead Product Designer, focused and smiling gently in clean studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvkiA-iDW23lqI1VGcJfioQxP8GQO4kBnPKlPOMt1fmZgbC8FD2PNViKwwlJnPQlZnJiJx1RPF_VjY52RcjHgLNizESMUWeqBxxqxXeqKEFl6kAfZiuRiXQnerPKZmUAai6zYDJbq_yYbQmjiSCfUfjQMXvPnnGGgCzgcuM3l2Zgl4EDoxU2f1Lhy-zCRyloXMJTTTwD4SSXmIuEHM31cIae2AwrLYqcC6qHEvUhl8"/>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Karan Shah</h3>
+<span class="px-2 py-0.2 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-[#7C3AED]">Cross-Functional Lead</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lead Product Designer · Design Systems &amp; UX</p>
+</div>
+</div>
+<div class="flex items-center gap-1 text-[#B45309] font-label-md text-label-md font-semibold bg-[#FEF3C7]/60 px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span>4.4 Rating</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                “Highly collaborative partner on the onboarding funnel experiment. Ananya brings sharp user-centric metrics and data-informed iterations to design jams. Always respectful of UX trade-offs while maintaining relentless focus on business outcomes.”
+              </p>
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-[#7C3AED] font-semibold">Design Empathy</span>
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] font-semibold">Data-Informed</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submitted Nov 15 · Mid-Year 360</span>
+</div>
+</div>
+<!-- Review 4: Peer PM (Constructive Feedback Included) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-low hover:shadow-md transition-shadow space-y-space-sm">
+<div class="flex items-start justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface-variant ring-1 ring-surface-container">
+                    PM
+                  </div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Product Management Peer</h3>
+<span class="px-2 py-0.2 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">Squad Partner</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Core Commerce Pod</p>
+</div>
+</div>
+<div class="flex items-center gap-1 text-[#B45309] font-label-md text-label-md font-semibold bg-[#FEF3C7]/60 px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span>3.9 Rating</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                  “Consistently high rigor and analytical throughput. Her dashboard models gave leadership real-time clarity during launch week.”
+                </p>
+<!-- Constructive Growth Opportunity Callout -->
+<div class="p-space-sm rounded-lg bg-[#FEF3C7]/30 border-l-2 border-l-[#B45309] space-y-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-[#B45309] flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+<span>Growth Opportunity for H2</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    “One area of growth for H2 is earlier alignment on schema changes with the Data Platform team prior to sprint kickoffs, which will prevent downstream rework.”
+                  </p>
+</div>
+</div>
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">High Rigor</span>
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309] font-semibold">H2 Growth Focus</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submitted Nov 14 · Mid-Year 360</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Ancillary Rail (4 Cols) -->
+<aside class="lg:col-span-4 space-y-space-lg">
+<!-- Peer Feedback Guidelines & Rubric (SBI Model) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">psychology</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Peer Feedback Rubric</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Use the <strong class="text-on-surface">SBI Model</strong> (Situation, Behavior, Impact) when providing reviews to help colleagues grow with actionable specifics.
+          </p>
+<div class="space-y-space-sm pt-space-xs font-body-sm text-body-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low/50 space-y-1">
+<span class="font-label-sm text-label-sm font-semibold text-primary">1. Situation</span>
+<p class="text-on-surface-variant">Describe the specific time and location of the observed interaction.</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/50 space-y-1">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">2. Behavior</span>
+<p class="text-on-surface-variant">Detail the observable actions, code commits, designs, or verbal communication.</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/50 space-y-1">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">3. Impact</span>
+<p class="text-on-surface-variant">Explain the concrete team or business outcome produced as a result.</p>
+</div>
+</div>
+<div class="pt-space-xs border-t border-surface-container">
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center justify-between" href="#">
+<span>View PMG Engineering &amp; Design Competency Matrix</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Anonymity & Calibration Notice -->
+<div class="bg-gradient-to-br from-[#CCFBF1]/30 via-surface-container-lowest to-[#EDE9FE]/20 rounded-xl p-space-lg shadow-sm space-y-space-sm border border-[#CCFBF1]/50">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+<h4>Calibration &amp; Fairness Protocol</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            All qualitative commentary is reviewed during Manager Calibration Panels to eliminate bias. Individual ratings roll into composite cohort medians without unmasked attribution unless specifically authorized.
+          </p>
+<div class="flex items-center gap-2 pt-1 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Audited by PMG People Ops</span>
+</div>
+</div>
+<!-- Linked Kudos & Wins Card (Wins Journal Integration) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md border-t-[3px] border-t-secondary">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">auto_awesome</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Imported Kudos &amp; Wins</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-[#7C3AED]">3 Wins</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            These recorded wins are automatically linked to your Mid-Year 360 portfolio for review by committee:
+          </p>
+<div class="space-y-space-sm pt-space-xs">
+<!-- Win 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/40 hover:bg-surface-container-low transition-colors space-y-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">P0 Telemetry Restoration</span>
+<span class="text-on-surface-variant text-[11px]">Oct 12</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prevented checkout revenue drop; commended by VP Eng in All-Hands.</p>
+</div>
+<!-- Win 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/40 hover:bg-surface-container-low transition-colors space-y-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">Tokens System Delivery</span>
+<span class="text-on-surface-variant text-[11px]">Sep 29</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Joint ship with Karan Shah; cut CSS bundle sizes by 18% across checkout.</p>
+</div>
+<!-- Win 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/40 hover:bg-surface-container-low transition-colors space-y-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">Mentorship of Associate FE</span>
+<span class="text-on-surface-variant text-[11px]">Aug 14</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Guided 2 new joiners through first production pull requests.</p>
+</div>
+</div>
+<button class="w-full h-9 bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md rounded-lg flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add_reaction</span>
+<span>View Full Wins Journal</span>
+</button>
+</div>
+</aside>
+</div>
+</div>
+<!-- Inline Tab Interactivity -->
+<script>
+    document.querySelectorAll('#peerReviewTabs .tab-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#peerReviewTabs .tab-btn').forEach((b) => {
+          b.classList.remove('text-primary', 'border-primary');
+          b.classList.add('text-on-surface-variant', 'border-transparent');
+        });
+        btn.classList.add('text-primary', 'border-primary');
+        btn.classList.remove('text-on-surface-variant', 'border-transparent');
+      });
+    });
+  </script>
+</div></main></div></body></html>

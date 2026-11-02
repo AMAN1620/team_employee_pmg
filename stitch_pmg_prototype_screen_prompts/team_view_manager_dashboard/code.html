@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#8a4cfc","inverse-primary":"#80d5cb","on-primary-fixed":"#00201d","on-secondary-container":"#fffbff","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb598","tertiary-fixed":"#ffdbce","surface-container-lowest":"#ffffff","primary-fixed-dim":"#80d5cb","error-container":"#ffdad6","on-surface":"#0b1c30","surface-container":"#e5eeff","surface-tint":"#006a63","on-primary":"#ffffff","secondary-fixed":"#eaddff","surface-container-low":"#eff4ff","error":"#ba1a1a","primary-fixed":"#9cf2e8","primary-container":"#0f766e","on-primary-container":"#a3faef","surface-bright":"#f8f9ff","tertiary-container":"#9c573a","surface-variant":"#d3e4fe","secondary":"#712ae2","on-error-container":"#93000a","outline-variant":"#bdc9c6","on-secondary":"#ffffff","inverse-surface":"#213145","on-background":"#0b1c30","on-secondary-fixed":"#25005a","on-error":"#ffffff","surface-container-high":"#dce9ff","primary":"#005c55","tertiary":"#7f4025","outline":"#6e7977","on-tertiary-fixed":"#370e00","on-secondary-fixed-variant":"#5a00c6","secondary-fixed-dim":"#d2bbff","surface-dim":"#cbdbf5","on-surface-variant":"#3e4947","surface-container-highest":"#d3e4fe","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#72361b","background":"#f8f9ff","on-tertiary-container":"#ffe5db","on-primary-fixed-variant":"#00504a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem","space-xl":"2rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"headline-sm":["Inter"],"pill-tag":["Inter"],"headline-lg":["Inter"],"display-lg":["Inter"],"title-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"]},fontSize:{"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}],"pill-tag":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[248px] bg-surface-container-lowest border-r border-[#E2E8F0] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-[#E2E8F0]"><img alt="PMG Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XLIvSLXm27pPW0j3ciblrAyAXB51gEaNkixrTJGzSXRPQ7yGDv_hShomgPmqPh_zh12uOOUWofittX2SrVoWZstPSII2e6nvTnXj-5-vhwglp7v_F-Yws77G2pWE-DC0kt03fwUF8RWU8XTIIIL8azZyX1DmqEfrbISsO3GSeQLeuCBvzaUJ89Rdxk0ojlljvz0r-CNUoZMSdn-P4j_h0wBghffDy-74Zg2wkWdkHrCA"/><span class="font-title-md text-title-md text-on-surface tracking-tight font-semibold">PMG</span></div><nav class="p-space-sm space-y-1 flex-1" data-active-classes="bg-[#EDE9FE]/50 text-secondary font-semibold"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="goals" href="#">Goals</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="check-ins" href="#">Check-ins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="blockers" href="#">Blockers</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="wins" href="#">Wins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="one-on-ones" href="#">1:1s</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="feedback" href="#">Feedback</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reviews" href="#">Reviews</a></nav></div><div class="p-space-sm border-t border-[#E2E8F0] bg-surface-container-lowest"><div class="p-space-sm rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-colors"><div class="flex items-center gap-space-sm"><img alt="Ananya Rao" class="w-9 h-9 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/><div class="flex-1 min-w-0"><div class="flex items-center justify-between gap-1"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ananya Rao</span><span class="px-1.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">Employee</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Product Analyst</p></div></div><div class="mt-space-sm pt-space-xs border-t border-[#E2E8F0]/60 flex items-center justify-between"><a class="font-label-sm text-label-sm text-primary-container hover:underline inline-flex items-center gap-0.5" href="#"><span>Switch role</span><span class="material-symbols-outlined text-[14px]">swap_horiz</span></a></div></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-surface-container-lowest border-b border-[#E2E8F0] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm w-full max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-lowest border border-[#E2E8F0] rounded-lg text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search goals, team, blockers..." type="text"/><div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container-low text-on-surface-variant border border-[#E2E8F0] rounded text-[11px] font-medium font-mono">⌘K</kbd></div></div></div><div class="flex items-center gap-space-md"><button class="h-10 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-medium rounded-lg flex items-center gap-space-xs transition-all shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Check in</span></button><button aria-label="Notifications" class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-[#BE123C] rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center pl-space-xs border-l border-[#E2E8F0]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive View State Controller & Page Header -->
+<div class="px-space-xl pt-space-lg pb-space-md flex flex-col gap-space-md">
+<!-- Top Action Breadcrumb Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Organization</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Engineering &amp; Product</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Team Overview</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Team Overview · Engineering &amp; Product Squad</h1>
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-primary font-medium">Q3 FY27 Cycle</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          7 direct reports · 3 active blockers requiring manager intervention · Mid-Year Appraisal Pacing: 5/7 drafts submitted
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md font-medium rounded-lg shadow-sm flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">event_upcoming</span>
+<span>Schedule Team 1:1s</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md font-medium rounded-lg shadow-sm flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+<span>Export Summary</span>
+</button>
+<button class="h-10 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-medium rounded-lg shadow-sm flex items-center gap-space-xs transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>New Squad Goal</span>
+</button>
+</div>
+</div>
+<!-- 4 High-Level Metric Ribbons -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mt-1">
+<!-- KPI 1: Check-in Cadence -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Check-in Cadence</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">86%</span>
+<span class="font-pill-tag text-pill-tag text-[#15803D] bg-[#DCFCE7] px-2 py-0.5 rounded-full font-semibold">On-Time</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant bg-surface-container-low/40 -mx-space-lg -mb-space-lg px-space-lg py-2.5">
+<span class="truncate">6/7 submitted · <strong class="text-[#BE123C] font-medium">1 overdue</strong> (Rahul)</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">sentiment_satisfied</span> 4.1/5 avg
+          </span>
+</div>
+</div>
+<!-- KPI 2: Active Blockers -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Squad Blockers</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-[#BE123C]">3 Active</span>
+<span class="font-pill-tag text-pill-tag text-[#B45309] bg-[#FEF3C7] px-2 py-0.5 rounded-full font-semibold">1 Critical P0</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container/40 flex items-center justify-center text-[#BE123C]">
+<span class="material-symbols-outlined text-[22px]">error</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant bg-surface-container-low/40 -mx-space-lg -mb-space-lg px-space-lg py-2.5">
+<span class="text-on-surface font-medium truncate">2 can be unblocked by Vikram</span>
+<span class="font-pill-tag text-pill-tag px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-mono text-[11px]">SLA &gt; 5d</span>
+</div>
+</div>
+<!-- KPI 3: Goal Health -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">OKR Pacing Health</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">78%</span>
+<span class="font-pill-tag text-pill-tag text-[#15803D] bg-[#DCFCE7] px-2 py-0.5 rounded-full font-semibold">Healthy</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">track_changes</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant bg-surface-container-low/40 -mx-space-lg -mb-space-lg px-space-lg py-2.5">
+<div class="flex items-center gap-1.5 w-full">
+<div class="flex-1 bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-[#15803D] h-full" style="width: 78%"></div>
+<div class="bg-[#B45309] h-full" style="width: 17%"></div>
+<div class="bg-[#B91C1C] h-full" style="width: 5%"></div>
+</div>
+<span class="font-label-sm text-label-sm whitespace-nowrap text-on-surface font-medium">14 On · 3 Risk</span>
+</div>
+</div>
+</div>
+<!-- KPI 4: Calibration Readiness -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Calibration Readiness</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">5 of 7</span>
+<span class="font-pill-tag text-pill-tag text-primary-container bg-[#CCFBF1] px-2 py-0.5 rounded-full font-semibold">Drafts Ready</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-[#EDE9FE] flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">balance</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant bg-surface-container-low/40 -mx-space-lg -mb-space-lg px-space-lg py-2.5">
+<span class="truncate">Mid-Year Cutoff: <strong>30 Nov</strong></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">6 days left</span>
+</div>
+</div>
+</div>
+<!-- Urgent Action Alert: Blocker Escalation Banner -->
+<div class="p-space-md rounded-xl bg-gradient-to-r from-[#FFF1F2] via-[#FFFBEB] to-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-[#FFE4E6] flex items-center justify-center text-[#BE123C] shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-md text-label-md font-bold text-[#9F1239]">Escalation Queue: 1 Blocker Exceeding 5-Day SLA</span>
+<span class="font-pill-tag text-pill-tag bg-[#FFE4E6] text-[#BE123C] px-2 py-0.5 rounded-full font-bold">Open 6 Days</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-0.5">
+<strong>Ananya Rao</strong>: Goal 1 <em>"Data Platform dashboard access &amp; pipeline permissions"</em> is blocked by Arjun Nair's platform squad.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="h-9 px-3 bg-[#FFE4E6] hover:bg-[#FECDD3] text-[#9F1239] rounded-lg font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Slack Arjun Nair</span>
+</button>
+<button class="h-9 px-3 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md font-medium shadow-xs transition-colors" type="button">
+<span>Reassign Priority</span>
+</button>
+<button class="h-9 px-3 bg-primary-container hover:bg-[#115E59] text-on-primary rounded-lg font-label-md text-label-md font-medium shadow-xs transition-colors" type="button">
+<span>Mark Investigated</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Content Layout (12 Columns: 8.5 Columns Roster, 3.5 Columns Manager Rails) -->
+<div class="px-space-xl pb-space-xl grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Main Team Roster & Performance Table (8 of 12 cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md min-w-0">
+<!-- Table Controls Bar -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Filter Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 lg:pb-0" id="filter-tab-container">
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md font-semibold bg-surface-container text-primary flex items-center gap-1.5 transition-colors whitespace-nowrap" type="button">
+<span>All Direct Reports</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-container text-on-primary font-mono text-[11px]">7</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface flex items-center gap-1.5 transition-colors whitespace-nowrap" type="button">
+<span>Blockers Active</span>
+<span class="px-1.5 py-0.2 rounded-full bg-[#FFE4E6] text-[#BE123C] font-mono text-[11px]">2</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface flex items-center gap-1.5 transition-colors whitespace-nowrap" type="button">
+<span>Reviews Pending</span>
+<span class="px-1.5 py-0.2 rounded-full bg-[#FEF3C7] text-[#B45309] font-mono text-[11px]">2</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface flex items-center gap-1.5 transition-colors whitespace-nowrap" type="button">
+<span>Promotion Candidates</span>
+<span class="px-1.5 py-0.2 rounded-full bg-[#EDE9FE] text-secondary font-mono text-[11px]">2</span>
+</button>
+</div>
+<!-- Search & Sorting Dropdown -->
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="relative w-48 sm:w-56">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-8 pr-3 bg-surface-container-low rounded-lg text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Filter team..." type="text"/>
+</div>
+<div class="relative">
+<select class="h-9 px-3 pr-8 bg-surface-container-low rounded-lg text-on-surface font-label-md text-label-md font-medium appearance-none focus:outline-none focus:ring-1 focus:ring-primary-container cursor-pointer">
+<option>Sort: Urgency / Needs Action</option>
+<option>Sort: Goal Performance (High-Low)</option>
+<option>Sort: Appraisal Status</option>
+<option>Sort: Name (A-Z)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">unfold_more</span>
+</div>
+</div>
+</div>
+<!-- Direct Reports Cards Stream -->
+<div class="flex flex-col gap-space-sm">
+<!-- CARD 1: Ananya Rao (Critical Escalation / 1:1 In 25m) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-[#BE123C]"></div>
+<!-- Top Row: Avatar, Role, Check-in status, 1:1 countdown -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pl-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-xs" data-alt="Professional portrait of Indian female product analyst Ananya Rao wearing glasses and navy shirt with friendly intelligent expression in a bright modern workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB20oNdn1xaJhhwYjfKBQyFyRFQLL0xJ9pPCfHZCkXSuJl-HLfHABkO3XuARF_OOPjXn4ps_3zg_z0_tfACNu0Y3KDcz4AQZjZmEq9a39TT7evzrRRa2r0raw3Ss_zUC9r2Saz3BdRnkBEHPNYPIBdt0XT_kgsaRDv9CATkozJzMTXWw2SibeWdJfrs49w3TpJb7DC5lLBH_vR8LxoS2HdAauJ_rCh4Uz87y5lb8lgE"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#15803D] text-white flex items-center justify-center font-bold text-[10px] ring-2 ring-surface-container-lowest">4</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-title-md text-title-md font-bold text-on-surface tracking-tight hover:text-primary transition-colors cursor-pointer">Ananya Rao</h3>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant font-medium">Product Analyst · L4</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> L5 Stretch Ready
+                  </span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="flex items-center gap-1 text-[#15803D] font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Check-in Submitted
+                  </span>
+<span>·</span>
+<span class="text-on-surface-variant">Weekly Sentiment: <strong>4.0 / 5.0</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2.5 py-1 rounded-lg bg-[#CCFBF1] text-[#0F766E] font-label-sm text-label-sm font-semibold flex items-center gap-1 animate-pulse">
+<span class="material-symbols-outlined text-[16px]">video_camera_front</span>
+<span>1:1 Today 4:00 PM (In 25m)</span>
+</span>
+</div>
+</div>
+<!-- Middle Row: Goal Pacing, Active Blocker and Review Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pl-2">
+<!-- Goal Sub-Card -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Goal Progression</span>
+<span class="font-semibold text-on-surface">3 Active OKRs</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate">Self-Serve Checkout Funnel</span>
+<span class="font-medium text-[#15803D]">85%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#15803D] h-full" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate text-[#BE123C] font-medium">Data Platform Permissions</span>
+<span class="font-bold text-[#BE123C]">34.1%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#BE123C] h-full" style="width: 34%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Blocker Sub-Card -->
+<div class="p-space-sm rounded-lg bg-[#FFE4E6]/50 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-[#9F1239] font-label-sm text-label-sm font-semibold">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Critical Blocker
+                  </span>
+<span class="font-mono text-[11px] bg-[#FFE4E6] px-1.5 py-0.5 rounded">6 Days</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#881337] mt-1.5 line-clamp-2">
+                  Query timeout &amp; lakehouse schema access locked by Infra team (Arjun).
+                </p>
+</div>
+<div class="mt-2 flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-[#9F1239] font-medium">Impact: Q3 Funnel OKR</span>
+<span class="material-symbols-outlined text-[16px] text-[#BE123C]">arrow_forward</span>
+</div>
+</div>
+<!-- Mid-Year Review Sub-Card -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Mid-Year Appraisal</span>
+<span class="font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] px-1.5 py-0.2 rounded font-semibold">Draft Ready</span>
+</div>
+<div class="mt-2 flex items-baseline gap-3">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Self Score:</span>
+<span class="font-bold text-on-surface ml-1">3.8 / 5.0</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Manager:</span>
+<span class="font-bold text-primary ml-1">3.65 / 5.0</span>
+</div>
+</div>
+</div>
+<div class="mt-2 text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Peer 360: <strong>4 of 4 completed</strong></span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Toolbar -->
+<div class="flex items-center justify-between pl-2 pt-2 border-t border-surface-container-high/40">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last Check-in: Yesterday at 5:40 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" type="button">
+                Open 1:1 Prep Doc
+              </button>
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" type="button">
+                View Review Draft
+              </button>
+<button class="h-8 px-3 rounded-lg bg-[#FFE4E6] hover:bg-[#FECDD3] text-[#9F1239] font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                Expedite Blocker
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Karan Shah (Design Lead · High Performer) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-xs" data-alt="Portrait of Indian male product design lead Karan Shah with neat beard and charcoal t-shirt against creative studio background with natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_ZIIE7l2PxpgFBZ_b-APdNzg6x83tiLhhaJPUJU5Zd5QVaVVouI6iRu3QR1ocv79mpnkGi04omSDbj_PP8ZUw2G-D4jU8paCIPg3bcjn6fehYrMcLCW1oRUnph4xcl_GanNM7RWZoaSZLNe2fHSo6AHMT24XCk64VVseRHwGQUy8ZI7H56zGBC_lpCVGc8X8PQBQz7WpiKnX70_5VhV_gQzZu3iyumXFVh5wQk8c_"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#15803D] text-white flex items-center justify-center font-bold text-[10px] ring-2 ring-surface-container-lowest">4.5</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-title-md text-title-md font-bold text-on-surface tracking-tight hover:text-primary transition-colors cursor-pointer">Karan Shah</h3>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant font-medium">Design Lead · L5</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D] font-semibold">100% OKR Target</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="flex items-center gap-1 text-[#15803D] font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Check-in Submitted
+                  </span>
+<span>·</span>
+<span>Weekly Sentiment: <strong>4.5 / 5.0 (High)</strong></span>
+<span>·</span>
+<span class="text-secondary font-medium">Completed 4 Peer Reviews</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Next 1:1: Thursday 2:00 PM
+              </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Goal Progression</span>
+<span class="font-semibold text-[#15803D]">All on track</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate">Onboarding Redesign Spec v2</span>
+<span class="font-bold text-[#15803D]">100%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#15803D] h-full" style="width: 100%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate">Tokens &amp; PMG Component Library</span>
+<span class="font-bold text-[#15803D]">92%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#15803D] h-full" style="width: 92%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Active Blockers</span>
+<span class="font-semibold text-[#15803D]">0 Blockers</span>
+</div>
+<div class="mt-2 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-[#15803D]">verified</span>
+<span>Smooth execution sprint. No dependencies delayed.</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Mid-Year Appraisal</span>
+<span class="font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309] px-1.5 py-0.2 rounded font-semibold">Ready for Scoring</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Self Score:</span>
+<span class="font-bold text-on-surface">4.4 / 5.0 (Exceeds)</span>
+</div>
+<div class="mt-2 text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vikram evaluation required</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-high/40">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Submitted detailed feedback on Ananya and Priya</span>
+<div class="flex items-center gap-2">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" type="button">
+                View 1:1 History
+              </button>
+<button class="h-8 px-3 rounded-lg bg-primary-container hover:bg-[#115E59] text-on-primary font-label-sm text-label-sm font-medium transition-colors" type="button">
+                Start Review Scoring
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Arjun Nair (Staff Data Platform Engineer · L6) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-xs" data-alt="Portrait of senior South Asian software engineer Arjun Nair wearing spectacles in an engineering office setting with monitors in blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAruFv8xQSp1o2_2_1y9seLWe6-WA4iB_NQokSnmPYEOdeLLW7NQEYE6qDHGLXA8A1FITi5hrw3LL-tuzLMn3yRf-Ps-z42Zo3E6uoBhNpXztgHxlorPzyAIqgryufyIL_N98E5RLaJMs24gsddNbg3M9s2hDX0pl0kpTiWmI_OjneC4EIpas9Zxztdtf35sXQu4TyMh1kuzVOiNDJM8JrMBoupVcegz2RWxXopU8w3"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#B45309] text-white flex items-center justify-center font-bold text-[10px] ring-2 ring-surface-container-lowest">3.5</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-title-md text-title-md font-bold text-on-surface tracking-tight hover:text-primary transition-colors cursor-pointer">Arjun Nair</h3>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant font-medium">Staff Data Platform Engineer · L6</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309] font-medium">High Workload Flag</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="flex items-center gap-1 text-[#15803D] font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Check-in Submitted
+                  </span>
+<span>·</span>
+<span>Weekly Sentiment: <strong>3.5 / 5.0 (Bandwidth Stretch)</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Next 1:1: Friday 11:00 AM
+              </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Goal Progression</span>
+<span class="font-semibold text-on-surface">3 Active OKRs</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate">Warehouse Migration to Snowflake</span>
+<span class="font-bold text-[#15803D]">70%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#15803D] h-full" style="width: 70%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate">Telemetry Pipeline v2 Scale</span>
+<span class="font-bold text-[#15803D]">80%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#15803D] h-full" style="width: 80%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-[#FEF3C7]/40 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-[#B45309] font-label-sm text-label-sm font-semibold">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">call_merge</span> Cross-Team Blocker
+                  </span>
+<span class="font-mono text-[11px] bg-[#FEF3C7] px-1.5 py-0.5 rounded text-[#B45309]">Assigned</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#92400E] mt-1.5 line-clamp-2">
+                  Owns Ananya’s lakehouse permission unblock. Awaiting security council token waiver.
+                </p>
+</div>
+<div class="mt-2 text-right">
+<span class="font-label-sm text-label-sm text-[#B45309] font-medium">Needs Vikram assist</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Mid-Year Appraisal</span>
+<span class="font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] px-1.5 py-0.2 rounded font-semibold">Scored (4.0)</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Calibrated Score:</span>
+<span class="font-bold text-[#15803D]">4.0 / 5.0 (Exceeds)</span>
+</div>
+<div class="mt-2 text-right">
+<span class="font-body-sm text-body-sm text-[#15803D] font-medium">Synced with Director</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-high/40">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Suggested: Discuss capacity rebalancing to support junior analysts</span>
+<div class="flex items-center gap-2">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" type="button">
+                View 1:1 Notes
+              </button>
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" type="button">
+                Review Calibration
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 4: Rahul Varma (OVERDUE Check-in / Pacing Behind) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-[#B45309]"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pl-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-xs" data-alt="Portrait of young Indian male junior analyst Rahul Varma with thoughtful expression in modern office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNIKyzoonsl6X4afyr8oj8cCLa80oqyXa1kbBKMq3Lw3D5YLYEf7sKG5OC3J0Gnx72unnp4sr75uIWwK0pfatMwDMfGF2dXZrDbJZsOyO7AgCVOQMapYy3buuEM0wTPLVtLB18n_x9HUf21ykvbD4ZiRv_mVwq7dS-hukyzHFQLwcPcF1SFKRxtBkWPrVgU1RhHCfozX_m6rBYRONPZmA9grHWR_J6nA_QgWDvuNhO"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#B91C1C] text-white flex items-center justify-center font-bold text-[10px] ring-2 ring-surface-container-lowest">!</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-title-md text-title-md font-bold text-on-surface tracking-tight hover:text-primary transition-colors cursor-pointer">Rahul Varma</h3>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant font-medium">Product Analyst · L3</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#FEE2E2] text-[#B91C1C] font-semibold">Pacing Behind</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="flex items-center gap-1 text-[#BE123C] font-semibold">
+<span class="material-symbols-outlined text-[14px]">schedule</span> Check-in Overdue (12 Days)
+                  </span>
+<span>·</span>
+<span>Last check-in submitted 2 Nov</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2.5 py-1 rounded-lg bg-[#FEF3C7] text-[#B45309] font-label-sm text-label-sm font-semibold">
+                1:1 Tomorrow 10:30 AM
+              </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pl-2">
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Goal Progression</span>
+<span class="font-semibold text-[#B45309]">45% Actual vs 60%</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate">Core Metrics Instrumentation</span>
+<span class="font-bold text-[#B45309]">45%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#B45309] h-full" style="width: 45%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-[#FEF3C7]/40 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-[#B45309] font-label-sm text-label-sm font-semibold">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">build_circle</span> Tooling Blocker
+                  </span>
+<span class="font-mono text-[11px] bg-[#FEF3C7] px-1.5 py-0.5 rounded text-[#B45309]">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#92400E] mt-1.5 line-clamp-2">
+                  Mixpanel query timeout on high-volume session data. Needs pipeline partition.
+                </p>
+</div>
+<div class="mt-2 text-right">
+<span class="font-label-sm text-label-sm text-[#B45309] font-medium">Add to 1:1 Agenda</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Mid-Year Appraisal</span>
+<span class="font-pill-tag text-pill-tag bg-[#F1F5F9] text-[#475569] px-1.5 py-0.2 rounded font-semibold">Not Started</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Self Appraisal:</span>
+<span class="font-medium text-[#BE123C]">Draft unsubmitted</span>
+</div>
+<div class="mt-2 text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Due in 6 days</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pl-2 pt-2 border-t border-surface-container-high/40">
+<span class="font-body-sm text-body-sm text-[#B45309] font-medium">Action recommended: Send Slack nudge for check-in &amp; review self-assessment</span>
+<div class="flex items-center gap-2">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" type="button">
+                Nudge Check-in
+              </button>
+<button class="h-8 px-3 rounded-lg bg-primary-container hover:bg-[#115E59] text-on-primary font-label-sm text-label-sm font-medium transition-colors" type="button">
+                Prep 1:1 Sync
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 5: Priya Sharma (Senior Frontend Engineer · L5) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-xs" data-alt="Portrait of Indian female senior software engineer Priya Sharma smiling with headset resting on neck in modern tech workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzlVYHShJZTC31TbM7fxs9z9oHIAPYcHfDTGnH18iQm3yDYeOAFbJKRw-7NM9F3uSLeDvrULpFa9HBWR3AhDRuF9n-PMYRazvYvkEgEHAcQYj2rIMURubxsQfE03T2ucTtNmAnAmBXIa0yExb35BnnrIKGsj-TjsbYuAUamM92S1KmgTT6VF0NU2ALZIKDp_qsov5VEhgWySIPCpuFo_EaFcCjBY3ilU0NZ3q_vQBl"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#15803D] text-white flex items-center justify-center font-bold text-[10px] ring-2 ring-surface-container-lowest">4</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-title-md text-title-md font-bold text-on-surface tracking-tight hover:text-primary transition-colors cursor-pointer">Priya Sharma</h3>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant font-medium">Senior Frontend Engineer · L5</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] font-semibold">90% OKR Pace</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="flex items-center gap-1 text-[#15803D] font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Check-in Submitted
+                  </span>
+<span>·</span>
+<span>Weekly Sentiment: <strong>4.0 / 5.0</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Next 1:1: Next Monday
+              </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Goal Progression</span>
+<span class="font-semibold text-[#15803D]">On Track</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate">Canary Deployment Framework</span>
+<span class="font-bold text-[#15803D]">90%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#15803D] h-full" style="width: 90%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Active Blockers</span>
+<span class="font-semibold text-[#15803D]">0 Blockers</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                All frontend dependencies cleared. Mentoring junior frontend interns.
+              </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Mid-Year Appraisal</span>
+<span class="font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309] px-1.5 py-0.2 rounded font-semibold">Self Due in 3d</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Self Appraisal:</span>
+<span class="font-medium text-[#B45309]">In draft (60% written)</span>
+</div>
+<div class="mt-2 text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 Peer reviews received</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-high/40">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Self-appraisal draft auto-saved 4 hours ago</span>
+<div class="flex items-center gap-2">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" type="button">
+                Send Gentle Reminder
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 6: Kavya Menon (Customer Support Ops Lead · L4) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-xs" data-alt="Portrait of South Asian female operations lead Kavya Menon smiling professionally in an energetic tech office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgkD-Sa3gzpUaOxl5W97NwHGV4BYDEgRDexoV_tFOlgd2BwrkulW4MsERvEyOa3m066w7tuENb1wC-lW7XKBH1-RhL24eao40IzFRHtawBnISwHbLZY9bCXMCm616_4sgRkibEoeTSpFhnV98qlF688sYZprXSlKxgrnwoG5WYEtRuCSO_Q98-DPquweSQ9f_3c5cDhlGWLRWUjvBJujckVwF75cdNLuNtFjoKQryY"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#15803D] text-white flex items-center justify-center font-bold text-[10px] ring-2 ring-surface-container-lowest">4</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-title-md text-title-md font-bold text-on-surface tracking-tight hover:text-primary transition-colors cursor-pointer">Kavya Menon</h3>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant font-medium">Support Ops Lead · L4</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-secondary font-medium">L5 Promotion Track</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="flex items-center gap-1 text-[#15803D] font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Check-in Submitted
+                  </span>
+<span>·</span>
+<span>Weekly Sentiment: <strong>4.0 / 5.0</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Next 1:1: Next Tuesday
+              </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Goal Progression</span>
+<span class="font-semibold text-[#15803D]">88% on track</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate">Tier-2 Triage SLA Reduction</span>
+<span class="font-bold text-[#15803D]">88%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#15803D] h-full" style="width: 88%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Active Blockers</span>
+<span class="font-semibold text-[#15803D]">0 Blockers</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Macro automation deployed successfully across tier-1 queues.
+              </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Mid-Year Appraisal</span>
+<span class="font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] px-1.5 py-0.2 rounded font-semibold">Self Submitted</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Self Score:</span>
+<span class="font-bold text-on-surface">3.9 / 5.0</span>
+</div>
+<div class="mt-2 text-right">
+<span class="font-body-sm text-body-sm text-primary font-medium">Ready for manager score</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-high/40">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recommended for L5 promotion packet discussion in calibration</span>
+<div class="flex items-center gap-2">
+<button class="h-8 px-3 rounded-lg bg-primary-container hover:bg-[#115E59] text-on-primary font-label-sm text-label-sm font-medium transition-colors" type="button">
+                Start Review
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 7: Marcus Chen (Backend Engineer · L4) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-xs" data-alt="Portrait of Asian male backend software developer Marcus Chen wearing modern glasses and minimal collared shirt in warm office lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASCKVqDOlU5qglqeshzq1uxMKbsAchpGYAqnl1IYVRnRzM7BjE1GBl1xaGUQy-S2XM79_RoJBU9g5J-BIyeur2l1a4CUGx7SUh8R6kaN2WxYcjFadG3q0yZMQYSEMSpG17hxXEGs49Vy-JpjRsQ11_UnPRX5sXPWRdkZCzW51_o6wOSjYS95SXJEETh4PhvTnKd4TBCKOFL3ua9HHB5BSkkmHxRNyl9AJgBNmPZR9G"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#15803D] text-white flex items-center justify-center font-bold text-[10px] ring-2 ring-surface-container-lowest">4</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-title-md text-title-md font-bold text-on-surface tracking-tight hover:text-primary transition-colors cursor-pointer">Marcus Chen</h3>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant font-medium">Backend Engineer · L4</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D] font-medium">Meets Expectations</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="flex items-center gap-1 text-[#15803D] font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Check-in Submitted
+                  </span>
+<span>·</span>
+<span>Weekly Sentiment: <strong>4.0 / 5.0</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Next 1:1: Next Wednesday
+              </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Goal Progression</span>
+<span class="font-semibold text-[#15803D]">75% on track</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="truncate">Auth Pipeline Refactor (OAuth2)</span>
+<span class="font-bold text-[#15803D]">75%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#15803D] h-full" style="width: 75%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Active Blockers</span>
+<span class="font-semibold text-[#15803D]">0 Blockers</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Identity microservice benchmarked at &lt;45ms p99 latency.
+              </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Mid-Year Appraisal</span>
+<span class="font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] px-1.5 py-0.2 rounded font-semibold">Scored (3.7)</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Calibrated Score:</span>
+<span class="font-bold text-on-surface">3.7 / 5.0 (Meets)</span>
+</div>
+<div class="mt-2 text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calibration locked</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-high/40">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Steady performer, consistent engineering quality</span>
+<div class="flex items-center gap-2">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" type="button">
+                View Summary
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: 3 High-Impact Manager Rail Panels (4 of 12 cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- WIDGET 1: Upcoming 1:1 Schedule Today & Tomorrow -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">calendar_today</span>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Upcoming 1:1 Meetings</h2>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" type="button">
+<span>Sync</span>
+<span class="material-symbols-outlined text-[14px]">sync</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Meeting 1: Ananya (Today) -->
+<div class="p-space-md rounded-xl bg-[#CCFBF1]/30 border-l-4 border-primary flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<img class="w-8 h-8 rounded-full object-cover shadow-xs" data-alt="Small thumbnail avatar of product analyst Ananya Rao" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA22P2v8rb4aQ35rmG6LcLlo2N9AuI9TArkpYTp5tZ2Tg3Sr9WR5V0zwhjNjqI8My8Ba1PR1QkFWDZtXMmB-l2cBwQbZT9PyHOIeAj6jCxZ5yBXGcgR_0NZFkTjHG2QIJWQmGniQ89MfvyZ35ZSOMJFfna-_hnXk6Mh2QWcBejXBGQSils6vhrd1e6-kTMom21OERJkn340gUr-7usKGA9CxRtIo1A_RgCw0vWr8bUy"/>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Ananya Rao</h4>
+<p class="font-body-sm text-body-sm text-primary font-semibold">Today · 4:00 PM (In 25 mins)</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-primary-container text-on-primary font-medium">Zoom Ready</span>
+</div>
+<div class="bg-surface-container-lowest/80 p-2.5 rounded-lg text-body-sm font-body-sm mt-1">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface block mb-1">Auto-Queued Talking Points (3):</span>
+<ul class="space-y-1 text-on-surface-variant">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-[#BE123C] shrink-0 mt-0.5">priority_high</span>
+<span>Blocker: Lakehouse access &amp; Arjun dependency</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary shrink-0 mt-0.5">check</span>
+<span>Mid-Year review self-assessment gap (3.8 vs 3.65)</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary shrink-0 mt-0.5">star</span>
+<span>Kudos: Recognition from VP of Product for Funnel v1</span>
+</li>
+</ul>
+</div>
+<div class="flex items-center justify-end gap-2 mt-1">
+<button class="h-8 px-3 rounded-lg bg-primary-container hover:bg-[#115E59] text-on-primary font-label-sm text-label-sm font-medium flex items-center gap-1 transition-colors w-full justify-center" type="button">
+<span class="material-symbols-outlined text-[16px]">video_call</span>
+<span>Join &amp; Open Live Agenda</span>
+</button>
+</div>
+</div>
+<!-- Meeting 2: Rahul (Tomorrow) -->
+<div class="p-space-md rounded-xl bg-surface-container-low/60 flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<img class="w-8 h-8 rounded-full object-cover shadow-xs" data-alt="Small thumbnail avatar of junior product analyst Rahul Varma" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP9sygKjehFnX6Oyt4iZd_HYEok_snAlDVuOVHiNNs5KdxRXZCbGhwDWhaiQNtXAz39Rzfi-SpFlm2P-APOq10nSPtwN08Q7iwZeO4Xsz05aFOqW27z-2dvpbosHb2HKY8MpQrO34xFmjs1CFrZUEpbuwJgf22WEH_9vzTRk7DkxuV3q5d1Vt0NjEmtoEAe4i1r8FENNYroP7bawgylKb9h3qWLythBcg4klmzWGc6"/>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Rahul Varma</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Tomorrow · 10:30 AM (30 min)</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309] font-medium">Agenda Prep</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Suggested agenda focus: Check-in cadence support, Mixpanel blocker unblocking &amp; mid-year draft pacing.
+            </p>
+</div>
+</div>
+</div>
+<!-- WIDGET 2: Team Calibration Bell Curve Preview -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">analytics</span>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Calibration Bell Curve</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D] font-semibold">Healthy Band</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Distribution preview of 7 direct reports against organizational guidelines for Q3 Mid-Year Cycle.
+        </p>
+<!-- Visual Distribution Bar Graph -->
+<div class="space-y-3 pt-1">
+<!-- Developing (<5%) -->
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">Developing (&lt;5%)</span>
+<span class="font-semibold text-on-surface">0% (0/7)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-outline h-full" style="width: 0%"></div>
+</div>
+</div>
+<!-- Partially Meets (10-15%) -->
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">Partially Meets (10-15%)</span>
+<span class="font-semibold text-[#B45309]">14% (1/7 · Rahul)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-[#B45309] h-full" style="width: 14.2%"></div>
+</div>
+</div>
+<!-- Meets Expectations (50-60%) -->
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">Meets Expectations (50-60%)</span>
+<span class="font-semibold text-primary">57% (4/7 · Ananya, Marcus, Kavya, Priya)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-[#0F766E] h-full" style="width: 57.1%"></div>
+</div>
+</div>
+<!-- Exceeds Expectations (20-30%) -->
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">Exceeds Expectations (20-30%)</span>
+<span class="font-semibold text-secondary">29% (2/7 · Karan, Arjun)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full" style="width: 28.5%"></div>
+</div>
+</div>
+<!-- Exceptional (<5%) -->
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">Exceptional (&lt;5%)</span>
+<span class="font-semibold text-on-surface">0% (0/7)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full" style="width: 0%"></div>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#15803D]">verified_user</span>
+<span>No Band Compliance Violations</span>
+</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline font-semibold" type="button">Calibration Room</button>
+</div>
+</div>
+<!-- WIDGET 3: Squad Sentiment & Peer 360 Pulse -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">mood</span>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Squad Pulse &amp; 360 Reviews</h2>
+</div>
+<span class="font-pill-tag text-pill-tag text-primary bg-[#CCFBF1] px-2 py-0.5 rounded-full font-semibold">4-Week Trend</span>
+</div>
+<!-- Sentiment Sparkline & Stats -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Squad Sentiment Avg</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">4.1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 5.0</span>
+<span class="text-[#15803D] font-label-sm text-label-sm font-semibold flex items-center">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +0.3
+              </span>
+</div>
+</div>
+<!-- Inline SVG Sparkline -->
+<div class="w-32 h-10 flex items-center">
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 100 35">
+<path d="M 5,28 L 35,22 L 65,12 L 95,12" stroke-linecap="round" stroke-linejoin="round"></path>
+<circle cx="5" cy="28" fill="currentColor" r="2.5"></circle>
+<circle cx="35" cy="22" fill="currentColor" r="2.5"></circle>
+<circle cx="65" cy="12" fill="currentColor" r="2.5"></circle>
+<circle cx="95" cy="12" fill="#0F766E" r="3.5" stroke="#FFFFFF" stroke-width="1.5"></circle>
+</svg>
+</div>
+</div>
+<!-- Peer 360 Progress -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">Peer 360 Exchange Progress</span>
+<span class="font-bold text-on-surface">21 of 24 Done (88%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full" style="width: 88%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            3 peer evaluations pending for Priya Sharma &amp; Rahul Varma.
+          </p>
+</div>
+<!-- Export & Action CTA -->
+<div class="pt-2 border-t border-surface-container-high/40 flex flex-col gap-2">
+<button class="h-10 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold rounded-lg flex items-center justify-center gap-space-xs transition-colors w-full" type="button">
+<span class="material-symbols-outlined text-[18px]">assessment</span>
+<span>Generate Mid-Cycle Squad Report</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for filter pills switching active visual state
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterContainer = document.getElementById('filter-tab-container');
+    if (filterContainer) {
+      const buttons = filterContainer.querySelectorAll('button');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => {
+            b.classList.remove('bg-surface-container', 'text-primary', 'font-semibold');
+            b.classList.add('text-on-surface-variant', 'font-medium');
+          });
+          btn.classList.add('bg-surface-container', 'text-primary', 'font-semibold');
+          btn.classList.remove('text-on-surface-variant', 'font-medium');
+        });
+      });
+    }
+  });
+</script></main></div></body></html>

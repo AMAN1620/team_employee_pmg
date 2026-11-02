@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#8a4cfc","inverse-primary":"#80d5cb","on-primary-fixed":"#00201d","on-secondary-container":"#fffbff","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb598","tertiary-fixed":"#ffdbce","surface-container-lowest":"#ffffff","primary-fixed-dim":"#80d5cb","error-container":"#ffdad6","on-surface":"#0b1c30","surface-container":"#e5eeff","surface-tint":"#006a63","on-primary":"#ffffff","secondary-fixed":"#eaddff","surface-container-low":"#eff4ff","error":"#ba1a1a","primary-fixed":"#9cf2e8","primary-container":"#0f766e","on-primary-container":"#a3faef","surface-bright":"#f8f9ff","tertiary-container":"#9c573a","surface-variant":"#d3e4fe","secondary":"#712ae2","on-error-container":"#93000a","outline-variant":"#bdc9c6","on-secondary":"#ffffff","inverse-surface":"#213145","on-background":"#0b1c30","on-secondary-fixed":"#25005a","on-error":"#ffffff","surface-container-high":"#dce9ff","primary":"#005c55","tertiary":"#7f4025","outline":"#6e7977","on-tertiary-fixed":"#370e00","on-secondary-fixed-variant":"#5a00c6","secondary-fixed-dim":"#d2bbff","surface-dim":"#cbdbf5","on-surface-variant":"#3e4947","surface-container-highest":"#d3e4fe","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#72361b","background":"#f8f9ff","on-tertiary-container":"#ffe5db","on-primary-fixed-variant":"#00504a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem","space-xl":"2rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"headline-sm":["Inter"],"pill-tag":["Inter"],"headline-lg":["Inter"],"display-lg":["Inter"],"title-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"]},fontSize:{"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}],"pill-tag":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[248px] bg-surface-container-lowest border-r border-[#E2E8F0] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-[#E2E8F0]"><img alt="PMG Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XLIvSLXm27pPW0j3ciblrAyAXB51gEaNkixrTJGzSXRPQ7yGDv_hShomgPmqPh_zh12uOOUWofittX2SrVoWZstPSII2e6nvTnXj-5-vhwglp7v_F-Yws77G2pWE-DC0kt03fwUF8RWU8XTIIIL8azZyX1DmqEfrbISsO3GSeQLeuCBvzaUJ89Rdxk0ojlljvz0r-CNUoZMSdn-P4j_h0wBghffDy-74Zg2wkWdkHrCA"/><span class="font-title-md text-title-md text-on-surface tracking-tight font-semibold">PMG</span></div><nav class="p-space-sm space-y-1 flex-1" data-active-classes="bg-[#EDE9FE]/50 text-secondary font-semibold"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="goals" href="#">Goals</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="check-ins" href="#">Check-ins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="blockers" href="#">Blockers</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="wins" href="#">Wins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="one-on-ones" href="#">1:1s</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="feedback" href="#">Feedback</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reviews" href="#">Reviews</a></nav></div><div class="p-space-sm border-t border-[#E2E8F0] bg-surface-container-lowest"><div class="p-space-sm rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-colors"><div class="flex items-center gap-space-sm"><img alt="Ananya Rao" class="w-9 h-9 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/><div class="flex-1 min-w-0"><div class="flex items-center justify-between gap-1"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ananya Rao</span><span class="px-1.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">Employee</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Product Analyst</p></div></div><div class="mt-space-sm pt-space-xs border-t border-[#E2E8F0]/60 flex items-center justify-between"><a class="font-label-sm text-label-sm text-primary-container hover:underline inline-flex items-center gap-0.5" href="#"><span>Switch role</span><span class="material-symbols-outlined text-[14px]">swap_horiz</span></a></div></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-surface-container-lowest border-b border-[#E2E8F0] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm w-full max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-lowest border border-[#E2E8F0] rounded-lg text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search goals, team, blockers..." type="text"/><div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container-low text-on-surface-variant border border-[#E2E8F0] rounded text-[11px] font-medium font-mono">⌘K</kbd></div></div></div><div class="flex items-center gap-space-md"><button class="h-10 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-medium rounded-lg flex items-center gap-space-xs transition-all shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Check in</span></button><button aria-label="Notifications" class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-[#BE123C] rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center pl-space-xs border-l border-[#E2E8F0]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-[1440px] mx-auto w-full px-space-xl py-space-lg flex flex-col gap-space-lg">
+<!-- Top Breadcrumb & Status Navigation -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[18px]">domain_verification</span>
+<span>Goal Approvals</span>
+</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="hover:text-primary transition-colors">Direct Reports</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-on-surface font-title-md text-title-md">Rohan Das (Q3 FY27)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309] shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#B45309] animate-pulse"></span>
+          Pending Manager Review
+        </span>
+<span class="text-outline font-body-sm text-body-sm hidden sm:inline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+          Submitted 2 days ago (Oct 4, 11:42 AM IST)
+        </span>
+</div>
+</div>
+<!-- Manager Perspective Context Hero Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute right-32 bottom-0 w-48 h-48 rounded-full bg-secondary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="relative">
+<img class="w-16 h-16 rounded-xl object-cover ring-2 ring-primary-container/20 shadow-sm" data-alt="Portrait photo of Rohan Das, a dedicated young Indian male associate product manager in smart casual attire, warm smile, neutral modern tech office interior background, soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbKvKT7KGceNKJ6i_4Hoc-STZJnw81g7T-_THH517VmIxnVGw8iVAhrLQYwuLPQs_G-eXyxq-KIImN0RQ9yjNpADBFkHnQMlIjYHohIEF_kxlkM9rscI7KO60QMnwvEnvWn9FX42_BJJCt_As680O2lUAEtKhm5LLeHzkowOA3tjUSZ2d-YDzGd8lDR7P1kTffVJ_jUBobPrnzE9jacVyoms5wkrz_Dje7us1r-F0d"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 bg-[#0F766E] rounded-full flex items-center justify-center text-on-primary text-[10px] font-bold">
+              L3
+            </div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-md text-headline-md text-on-surface">Draft in-app welcome tooltips &amp; activation copy for onboarding v2</h1>
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-primary-container">
+                Objective #3 · Q3
+              </span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-md text-body-md flex-wrap mt-0.5">
+<span class="font-medium text-on-surface">Rohan Das</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>Associate Product Manager</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+                Product Activation Team
+              </span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Manager: Vikram Mehta</span>
+</div>
+</div>
+</div>
+<!-- Quick Summary Stats Card -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-sm rounded-xl shrink-0 self-stretch lg:self-auto justify-between lg:justify-start">
+<div class="flex flex-col pr-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Target Date</span>
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary-container">calendar_today</span>
+              Nov 15, 2026
+            </span>
+</div>
+<div class="w-px h-8 bg-outline-variant/50"></div>
+<div class="flex flex-col pl-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Strategic Fit</span>
+<span class="font-title-md text-title-md text-[#15803D] flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Strong (98%)
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Workspace: Asymmetric 2-Column Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left / Primary Goal Content Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Parent Objective Alignment Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary-container font-label-md text-label-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+<span>Parent Objective Alignment</span>
+</div>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">
+              Tier 1 Strategic Priority
+            </span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="font-title-md text-title-md text-on-surface">
+              Product: Cut new-customer time-to-value from 14 to 5 days
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Department OKR owned by Vikram Mehta (Product Lead). Rohan's goal directly influences milestone Step 3 of friction reduction across the Indian SMB account creation funnel.
+            </p>
+</div>
+<!-- Progress Ring + Context Visualizer -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-12 h-12 flex items-center justify-center shrink-0">
+<svg class="w-12 h-12 transform -rotate-90" viewbox="0 0 48 48">
+<circle class="text-surface-container-high" cx="24" cy="24" fill="none" r="18" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary-container" cx="24" cy="24" fill="none" r="18" stroke="currentColor" stroke-dasharray="113" stroke-dashoffset="40" stroke-linecap="round" stroke-width="4"></circle>
+</svg>
+<span class="absolute font-pill-tag text-pill-tag text-primary-container font-bold">64%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Time-to-Value Velocity</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Currently averaging 8.2 days across 4,200 cohorts</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container font-medium hover:underline cursor-pointer flex items-center gap-0.5">
+<span>View Parent Tree</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Proposed Key Results Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">flag</span>
+<h3 class="font-title-md text-title-md text-on-surface">Key Results Breakdown (3 Proposed)</h3>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Manager review required per KR</span>
+</div>
+<!-- KR Item 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-pill-tag text-pill-tag font-bold shrink-0 mt-0.5">
+                  1
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">
+                    Audit existing 12 onboarding tooltip toolchains and benchmark against competitors
+                  </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Deliverable: Comprehensive Notion matrix mapping friction dropoffs against Razorpay, KhataBook, and Freshworks patterns.
+                  </p>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D] shrink-0">
+                Well Defined
+              </span>
+</div>
+<!-- Metric Baseline & Milestone Tracker -->
+<div class="mt-space-xs pt-space-xs flex items-center justify-between flex-wrap gap-2 text-on-surface-variant font-label-sm text-label-sm bg-surface-container-lowest rounded-lg p-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+<span>Type: <strong>Binary Deliverable (Audit Doc)</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">event</span>
+<span>Milestone: <strong>Oct 20, 2026</strong></span>
+</div>
+<div class="flex items-center gap-1 text-[#15803D]">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Self-directed</span>
+</div>
+</div>
+</div>
+<!-- KR Item 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-pill-tag text-pill-tag font-bold shrink-0 mt-0.5">
+                  2
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">
+                    Write 4-step progressive disclosure copy reviewed and approved by Design Core
+                  </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Deliverable: Figma spec with localized Hindi + English micro-copy validated through 5 corridor testing sessions with Delhi NCR merchants.
+                  </p>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E] shrink-0">
+                Cross-Functional
+              </span>
+</div>
+<div class="mt-space-xs pt-space-xs flex items-center justify-between flex-wrap gap-2 text-on-surface-variant font-label-sm text-label-sm bg-surface-container-lowest rounded-lg p-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">group</span>
+<span>Dependency: <strong>Priya S. (UX Design Lead)</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">event</span>
+<span>Milestone: <strong>Nov 02, 2026</strong></span>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+<span>1 Sync Booked</span>
+</div>
+</div>
+</div>
+<!-- KR Item 3 (Spotlighted for Manager Feedback) -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm ring-2 ring-[#7C3AED]/30 hover:shadow-md transition-shadow">
+<div class="absolute -top-2.5 right-4 bg-secondary-container text-on-secondary px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[13px]">mode_comment</span>
+              Suggested Revision Area
+            </div>
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed font-pill-tag text-pill-tag font-bold flex items-center justify-center shrink-0 mt-0.5">
+                  3
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">
+                      Lift step-3 completion rate from 42% to 60% within 30 days post-launch
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Metric: Posthog funnel telemetry tracing Step 3 (GSTIN auto-fetch &amp; bank verification trigger) to Step 4 dashboard entry.
+                  </p>
+</div>
+</div>
+</div>
+<!-- Interactive visual comparison bar -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Baseline: <strong>42%</strong></span>
+<span class="text-secondary font-semibold">Rohan's Target: <strong>60% (+18% lift)</strong></span>
+<span class="text-primary-container font-semibold">Vikram's Rec: <strong>52%-55%</strong></span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full relative overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 42%;"></div>
+<div class="absolute top-0 bottom-0 bg-[#0F766E]/50" style="left: 42%; width: 13%;"></div>
+<div class="absolute top-0 bottom-0 bg-secondary-container/40" style="left: 55%; width: 5%;"></div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-[#B45309]">info</span>
+<span>Historical cohort benchmark shows max 12% lift on first copy iteration. Consider setting 52% commit and 60% stretch.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Resources & Governance Row (Bento Sub-grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Resources & Support Required -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">handyman</span>
+<span>Requested Resources</span>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2 bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">design_services</span>
+<div>
+<span class="font-medium">Design Core pairing:</span>
+<span class="text-on-surface-variant"> ~8 hrs design review allocation across Sprint 14.</span>
+</div>
+</li>
+<li class="flex items-start gap-2 bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">bar_chart</span>
+<div>
+<span class="font-medium">Analytics setup:</span>
+<span class="text-on-surface-variant"> Custom PostHog group properties for merchant tier tagging.</span>
+</div>
+</li>
+</ul>
+</div>
+<!-- Proposed Check-in & Review Cadence -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">repeat</span>
+<span>Proposed Cadence</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between bg-surface-container-low p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface">1:1 Check-in Rhythm</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">Weekly (Thursdays)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface">Mid-Quarter Milestone</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Oct 28 (Figma Sign-off)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface">Retrospective Date</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Nov 20, 2026</span>
+</div>
+</div>
+</div>
+</div>
+<!-- History & Timeline Audit Trail -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-title-md text-title-md text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-outline">history</span>
+<span>Goal Audit History</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 events recorded</span>
+</div>
+<div class="relative pl-6 space-y-4 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container">
+<div class="relative flex items-start gap-space-sm">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-[#15803D] ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Goal Submitted for Manager Approval</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 4, 11:42 AM</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rohan Das shifted status from Draft → Pending Approval</span>
+</div>
+</div>
+<div class="relative flex items-start gap-space-sm">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-outline ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Key Result #3 Refined</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 3, 4:15 PM</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Updated target metric to 60% completion rate based on early telemetry data</span>
+</div>
+</div>
+<div class="relative flex items-start gap-space-sm">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-outline ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Initial Goal Draft Created</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 2, 2:30 PM</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Created by Rohan Das under Q3 FY27 Cycle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right / Coaching & Approval Workspace (5 cols sticky panel) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg lg:sticky lg:top-20">
+<!-- Manager Coaching & Feedback Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed/60 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Manager Coaching &amp; Feedback</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vikram Mehta (You)</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">
+              Private to Rohan &amp; You
+            </span>
+</div>
+<!-- Supportive Coaching Prompts -->
+<div class="bg-[#F8FAFC] rounded-lg p-space-sm flex items-start gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">tips_and_updates</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Coaching Angle for L3 Development:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Rohan is demonstrating high initiative. Validate his strong ownership while guiding him toward risk mitigation on the conversion metric stretch.
+              </p>
+</div>
+</div>
+<!-- Suggested Metric Adjustment Quick-Action Toggle -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">auto_fix_high</span>
+                Metric Target Tuning (KR #3)
+              </span>
+<span class="font-pill-tag text-pill-tag text-[#B45309] bg-[#FEF3C7] px-2 py-0.5 rounded-full">Suggested</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Would you like to propose a tiered commit vs. stretch split for the Step 3 completion rate?
+            </p>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="px-3 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm text-left flex flex-col transition-colors shadow-sm" type="button">
+<span class="font-bold text-primary-container">Tiered Commit</span>
+<span class="text-on-surface-variant text-[11px]">52% Base · 60% Stretch</span>
+</button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm text-left flex flex-col transition-colors shadow-sm" type="button">
+<span class="font-bold text-secondary">Current Target</span>
+<span class="text-on-surface-variant text-[11px]">Keep single 60% goal</span>
+</button>
+</div>
+</div>
+<!-- Rich Text Feedback Area -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="feedback-input">
+                Your Feedback &amp; Next Steps for Rohan
+              </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auto-saved 1m ago</span>
+</div>
+<div class="relative">
+<textarea class="w-full p-space-md rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm resize-none" id="feedback-input" placeholder="Provide constructive praise and actionable direction for Rohan..." rows="6">Great structure on this goal, Rohan! The alignment with our Q3 time-to-value North Star is crystal clear. 
+
+For KR #3, let's establish 52% as the green-status baseline commit, while treating 60% as the aspirational stretch target. That way you aren't penalized if post-launch tracking encounters attribution noise in week one. 
+
+I've already pinged Priya in Design Core to ensure she reserves design sync hours for your progressive disclosure copy review in Sprint 14.</textarea>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<div class="flex items-center gap-space-xs">
+<button class="p-1 hover:text-on-surface transition-colors" title="Bold text" type="button">
+<span class="material-symbols-outlined text-[16px]">format_bold</span>
+</button>
+<button class="p-1 hover:text-on-surface transition-colors" title="Bulleted list" type="button">
+<span class="material-symbols-outlined text-[16px]">format_list_bulleted</span>
+</button>
+<button class="p-1 hover:text-on-surface transition-colors" title="Add link" type="button">
+<span class="material-symbols-outlined text-[16px]">link</span>
+</button>
+</div>
+<span>384 characters</span>
+</div>
+</div>
+<!-- Notification Checklist Option -->
+<div class="flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-primary-container" id="add-to-agenda" type="checkbox"/>
+<label class="cursor-pointer select-none" for="add-to-agenda">
+              Add discussion points automatically to Thursday's 1:1 Agenda
+            </label>
+</div>
+<!-- Primary Decision Action Buttons -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full h-11 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-semibold rounded-lg flex items-center justify-center gap-space-xs transition-all shadow-sm" id="btn-approve" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Approve Goal</span>
+</button>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="h-10 px-space-sm bg-surface-container-lowest hover:bg-surface-container-low active:scale-[0.99] text-on-surface font-label-md text-label-md font-medium rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm" id="btn-suggest-metric" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+<span class="truncate">Suggest Metric Change</span>
+</button>
+<button class="h-10 px-space-sm bg-surface-container-lowest hover:bg-surface-container-low active:scale-[0.99] text-[#B91C1C] font-label-md text-label-md font-medium rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm" id="btn-request-changes" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span class="truncate">Request Changes</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Manager Quick Reference Card: Rohan's Current Band & OKR Load -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-outline">analytics</span>
+              Rohan's Q3 Workload Snapshot
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Balanced (3 Goals)</span>
+</div>
+<div class="space-y-2 pt-1 font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant truncate">1. Onboarding v2 Copy (This goal)</span>
+<span class="px-2 py-0.2 rounded-full font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309]">Pending</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant truncate">2. Razorpay Webhook Reliability</span>
+<span class="px-2 py-0.2 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">Active (72%)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant truncate">3. User Drop-off Cohort Analysis</span>
+<span class="px-2 py-0.2 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">Active (90%)</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Overall Capacity: <strong>85% Allocated</strong></span>
+<a class="text-primary-container font-medium hover:underline inline-flex items-center gap-0.5" href="#">
+<span>View Rohan's Profile</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Confirmation Toast / Interactive Notification Banner (Hidden by default, triggered on script) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm bg-inverse-surface text-inverse-on-surface px-space-lg py-space-md rounded-xl shadow-2xl" id="action-toast">
+<span class="material-symbols-outlined text-[#80D5CB] text-[22px]" id="toast-icon">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-inverse-on-surface" id="toast-title">Goal Approved Successfully</span>
+<span class="font-body-sm text-body-sm text-inverse-on-surface/80" id="toast-desc">Rohan Das notified &amp; goal activated for Q3 cycle.</span>
+</div>
+<button class="ml-4 p-1 hover:text-white transition-colors" onclick="dismissToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interactions for goal review approval workflows
+  const btnApprove = document.getElementById('btn-approve');
+  const btnSuggest = document.getElementById('btn-suggest-metric');
+  const btnChanges = document.getElementById('btn-request-changes');
+  const toast = document.getElementById('action-toast');
+  const toastTitle = document.getElementById('toast-title');
+  const toastDesc = document.getElementById('toast-desc');
+  const toastIcon = document.getElementById('toast-icon');
+
+  function triggerToast(title, desc, icon = 'check_circle', isSuccess = true) {
+    toastTitle.innerText = title;
+    toastDesc.innerText = desc;
+    toastIcon.innerText = icon;
+    toastIcon.style.color = isSuccess ? '#80D5CB' : '#FEF3C7';
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      dismissToast();
+    }, 4500);
+  }
+
+  function dismissToast() {
+    toast.classList.remove('translate-y-0', 'opacity-100');
+    toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+  }
+
+  if (btnApprove) {
+    btnApprove.addEventListener('click', () => {
+      btnApprove.disabled = true;
+      btnApprove.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span> <span>Processing Approval...</span>';
+      setTimeout(() => {
+        btnApprove.classList.remove('bg-primary-container', 'hover:bg-[#115E59]');
+        btnApprove.classList.add('bg-[#15803D]');
+        btnApprove.innerHTML = '<span class="material-symbols-outlined text-[20px]">done_all</span> <span>Goal Approved</span>';
+        triggerToast('Goal Approved & Activated', 'Rohan has been notified with your feedback and added to Thursday 1:1 agenda.');
+      }, 700);
+    });
+  }
+
+  if (btnSuggest) {
+    btnSuggest.addEventListener('click', () => {
+      const textarea = document.getElementById('feedback-input');
+      if (textarea && !textarea.value.includes('Tiered Target Recommendation:')) {
+        textarea.value += '\n\n• Recommendation on KR #3: Let us formally adjust the goal card to 52% baseline commit and 60% stretch.';
+        textarea.focus();
+      }
+      triggerToast('Revision Suggestion Appended', 'Feedback draft updated with metric guidance for Key Result #3.', 'tune', false);
+    });
+  }
+
+  if (btnChanges) {
+    btnChanges.addEventListener('click', () => {
+      triggerToast('Revision Requested', 'Feedback routed to Rohan Das. Goal moved to Needs Revision state.', 'edit_note', false);
+    });
+  }
+</script></main></div></body></html>

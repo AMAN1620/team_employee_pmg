@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#8a4cfc","inverse-primary":"#80d5cb","on-primary-fixed":"#00201d","on-secondary-container":"#fffbff","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb598","tertiary-fixed":"#ffdbce","surface-container-lowest":"#ffffff","primary-fixed-dim":"#80d5cb","error-container":"#ffdad6","on-surface":"#0b1c30","surface-container":"#e5eeff","surface-tint":"#006a63","on-primary":"#ffffff","secondary-fixed":"#eaddff","surface-container-low":"#eff4ff","error":"#ba1a1a","primary-fixed":"#9cf2e8","primary-container":"#0f766e","on-primary-container":"#a3faef","surface-bright":"#f8f9ff","tertiary-container":"#9c573a","surface-variant":"#d3e4fe","secondary":"#712ae2","on-error-container":"#93000a","outline-variant":"#bdc9c6","on-secondary":"#ffffff","inverse-surface":"#213145","on-background":"#0b1c30","on-secondary-fixed":"#25005a","on-error":"#ffffff","surface-container-high":"#dce9ff","primary":"#005c55","tertiary":"#7f4025","outline":"#6e7977","on-tertiary-fixed":"#370e00","on-secondary-fixed-variant":"#5a00c6","secondary-fixed-dim":"#d2bbff","surface-dim":"#cbdbf5","on-surface-variant":"#3e4947","surface-container-highest":"#d3e4fe","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#72361b","background":"#f8f9ff","on-tertiary-container":"#ffe5db","on-primary-fixed-variant":"#00504a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem","space-xl":"2rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"headline-sm":["Inter"],"pill-tag":["Inter"],"headline-lg":["Inter"],"display-lg":["Inter"],"title-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"]},fontSize:{"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}],"pill-tag":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[248px] bg-surface-container-lowest border-r border-[#E2E8F0] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-[#E2E8F0]"><img alt="PMG Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XLIvSLXm27pPW0j3ciblrAyAXB51gEaNkixrTJGzSXRPQ7yGDv_hShomgPmqPh_zh12uOOUWofittX2SrVoWZstPSII2e6nvTnXj-5-vhwglp7v_F-Yws77G2pWE-DC0kt03fwUF8RWU8XTIIIL8azZyX1DmqEfrbISsO3GSeQLeuCBvzaUJ89Rdxk0ojlljvz0r-CNUoZMSdn-P4j_h0wBghffDy-74Zg2wkWdkHrCA"/><span class="font-title-md text-title-md text-on-surface tracking-tight font-semibold">PMG</span></div><nav class="p-space-sm space-y-1 flex-1" data-active-classes="bg-[#EDE9FE]/50 text-secondary font-semibold"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="goals" href="#">Goals</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="check-ins" href="#">Check-ins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="blockers" href="#">Blockers</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="wins" href="#">Wins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="one-on-ones" href="#">1:1s</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="feedback" href="#">Feedback</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reviews" href="#">Reviews</a></nav></div><div class="p-space-sm border-t border-[#E2E8F0] bg-surface-container-lowest"><div class="p-space-sm rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-colors"><div class="flex items-center gap-space-sm"><img alt="Ananya Rao" class="w-9 h-9 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/><div class="flex-1 min-w-0"><div class="flex items-center justify-between gap-1"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ananya Rao</span><span class="px-1.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">Employee</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Product Analyst</p></div></div><div class="mt-space-sm pt-space-xs border-t border-[#E2E8F0]/60 flex items-center justify-between"><a class="font-label-sm text-label-sm text-primary-container hover:underline inline-flex items-center gap-0.5" href="#"><span>Switch role</span><span class="material-symbols-outlined text-[14px]">swap_horiz</span></a></div></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-surface-container-lowest border-b border-[#E2E8F0] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm w-full max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-lowest border border-[#E2E8F0] rounded-lg text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search goals, team, blockers..." type="text"/><div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container-low text-on-surface-variant border border-[#E2E8F0] rounded text-[11px] font-medium font-mono">⌘K</kbd></div></div></div><div class="flex items-center gap-space-md"><button class="h-10 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-medium rounded-lg flex items-center gap-space-xs transition-all shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Check in</span></button><button aria-label="Notifications" class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-[#BE123C] rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center pl-space-xs border-l border-[#E2E8F0]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin py-space-xl max-w-[1440px] mx-auto w-full flex flex-col gap-space-xl">
+<!-- Header Section with Distinct Typography Hierarchy & Metrics Snapshot -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-primary-fixed text-on-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+            Autonomous Data Governance
+          </span>
+<span class="font-body-sm text-body-sm text-outline">Updated today · Q3 Review Cycle</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Privacy &amp; Sharing · Transparency &amp; Data Ownership
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+          Control your visibility across PMG. We believe in high psychological safety and zero secret surveillance—here is exactly who can view your work, check-ins, and feedback.
+        </p>
+</div>
+<!-- Quick Trust Telemetry Chips -->
+<div class="flex items-center gap-space-md self-start lg:self-auto bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center gap-space-sm px-space-sm py-1 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">format_image_left</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">100% Audit Logged</span>
+<span class="font-body-sm text-body-sm text-outline">Zero hidden observers</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm px-space-sm py-1 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">lock_reset</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Self-Sovereign</span>
+<span class="font-body-sm text-body-sm text-outline">Exportable anytime</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 1. The PMG Transparency Pledge Banner -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary-container to-[#064E48] text-on-primary p-space-lg shadow-md">
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-12 h-12 rounded-xl bg-on-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container text-[28px]" style="font-variation-settings: 'FILL' 1;">handshake</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-primary font-semibold tracking-tight">The PMG Transparency Pledge</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-on-primary/20 text-on-primary">Firm Commitment</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container/90">
+              Your growth cannot thrive without trust. PMG strictly prohibits passive telemetry, keystroke or screen recording, covert sentiment AI analysis, and unannounced management audits. You co-own every data record generated here.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md h-10 rounded-lg bg-surface-container-lowest text-primary-container font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm flex items-center gap-1" id="viewPledgeDocBtn">
+<span class="material-symbols-outlined text-[18px]">policy</span>
+            Charter &amp; Ethics Policy
+          </button>
+</div>
+</div>
+<!-- Subtle Ambient Decorative Glyphs -->
+<div class="absolute -right-8 -bottom-10 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[200px]">security</span>
+</div>
+</div>
+<!-- 2. 'Who Sees What' Master Matrix -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Who Sees What Master Matrix</h2>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container-low text-on-surface-variant">Live Rules</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Real-time authorization matrix determining role-based access for Ananya Rao’s performance footprint.</p>
+</div>
+<div class="flex items-center gap-space-xs self-start sm:self-auto bg-surface-container-low p-1 rounded-lg">
+<button class="px-3 py-1.5 rounded-md font-label-sm text-label-sm bg-surface-container-lowest text-on-surface font-semibold shadow-xs">All 6 Artifacts</button>
+<button class="px-3 py-1.5 rounded-md font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors">Strictly Private (2)</button>
+<button class="px-3 py-1.5 rounded-md font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors">Shared (4)</button>
+</div>
+</div>
+<!-- Matrix Table Structure (No borders rule: utilizing tinted zebra cards & container shifts) -->
+<div class="overflow-x-auto">
+<table class="w-full text-left min-w-[840px]">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-sm text-label-sm rounded-lg">
+<th class="py-3 px-space-md rounded-l-lg font-semibold w-1/4">DATA ARTIFACT</th>
+<th class="py-3 px-space-md font-semibold w-1/3">AUTHORIZED VIEWERS</th>
+<th class="py-3 px-space-md font-semibold w-1/5">VISIBILITY LEVEL</th>
+<th class="py-3 px-space-md rounded-r-lg font-semibold text-right">OVERRIDE / PREF</th>
+</tr>
+</thead>
+<tbody class="divide-none text-on-surface font-body-md text-body-md">
+<!-- Row 1: Weekly Check-ins -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-semibold block text-on-surface">Weekly Check-in Responses</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Confidence ratings, priorities, mood score</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">lock_person</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">You &amp; Vikram Mehta (Direct Manager)</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Skip-level (Pooja Nair) receives only anonymized quarterly aggregation.</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#0F766E]"></span>
+                  Manager Only
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top text-right">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-weekly-checkin" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</td>
+</tr>
+<!-- Row 2: Raised Blockers -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">troubleshoot</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-semibold block text-on-surface">Raised Blockers &amp; Impediments</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dependencies, tech debt, team handoffs</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">group</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">Vikram Mehta &amp; Tagged Resolvers</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Example: Data Platform Squad when access or pipeline blockers logged.</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#B45309]"></span>
+                  Targeted Squad
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top text-right">
+<button class="font-label-sm text-label-sm text-primary-container hover:underline font-semibold inline-flex items-center gap-1">
+                  Scope (3 Teams) <span class="material-symbols-outlined text-[14px]">tune</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Wins Journal & Kudos -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-[#EDE9FE] text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-semibold block text-on-surface">Wins Journal &amp; Kudos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Shipped metrics, peer compliments, highlights</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">public</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">Org-wide Visible (Default)</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Broadcasts to team portfolio &amp; #shoutouts feed.</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Org-wide Visible
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top text-right">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-wins-public" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</td>
+</tr>
+<!-- Row 4: 1:1 Meeting Notes -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">forum</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-semibold block text-on-surface">1:1 Bi-weekly Meeting Notes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Private agenda topics, coaching agreements</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-error">lock</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">Private Shared Doc: You &amp; Vikram</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">HR, skip-level leaders, and peers cannot access or query.</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#15803D]"></span>
+                  Strictly Private
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top text-right">
+<span class="font-label-sm text-label-sm text-outline font-mono">ENCRYPTED</span>
+</td>
+</tr>
+<!-- Row 5: 360 Peer Feedback Received -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">rate_review</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-semibold block text-on-surface">360 Peer Feedback Received</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Peer appraisals, growth vectors, team inputs</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">shield</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">De-identified HR Review Committee</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Author names permanently scrubbed before panel calibration.</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#0F766E]"></span>
+                  Anonymized / Calibration
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top text-right">
+<span class="font-label-sm text-label-sm text-outline">Protected by Policy</span>
+</td>
+</tr>
+<!-- Row 6: Performance Goals & Alignment -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">track_changes</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-semibold block text-on-surface">Performance Goals &amp; Alignment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Quarterly OKRs, KPI metrics, tree linkages</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">apartment</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">Public Across Squad &amp; Company Tree</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Enables organizational synergy and prevents duplicate work streams.</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Org-wide Visible
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top text-right">
+<span class="font-label-sm text-label-sm text-outline">Mandatory Alignment</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 3. Granular Privacy Settings & Controls (Two Column Asymmetrical Bento Grid) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column (7 cols): Granular Controls -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Setting Card: Wins & Recognition Sharing -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">celebration</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Wins &amp; Recognition Sharing</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container-low text-on-surface-variant">Broadcast Channel</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Determine how your peer kudos and documented milestones are amplified to the broader engineering and product division.
+          </p>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="mt-1 h-4 w-4 text-primary-container focus:ring-primary-container" name="wins-sharing-dest" type="radio" value="slack"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+                  Share kudos immediately on #shoutouts Slack &amp; PMG Wall
+                  <span class="px-1.5 py-0.2 bg-[#CCFBF1] text-[#0F766E] rounded font-pill-tag text-[10px]">Recommended</span>
+</span>
+<span class="font-body-sm text-body-sm text-outline">Supports collective morale; colleagues can celebrate achievements directly.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="mt-1 h-4 w-4 text-primary-container focus:ring-primary-container" name="wins-sharing-dest" type="radio" value="private"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Keep private in my Wins Journal only</span>
+<span class="font-body-sm text-body-sm text-outline">Visible solely to you and Vikram during review milestones; hidden from global streams.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Setting Card: Morale & Sentiment Granular Exposure -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">trending_up</span>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Check-in Morale Trend Visibility</h3>
+<span class="font-body-sm text-body-sm text-outline">Skip-level protection &amp; aggregated analytics</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="toggle-blur-morale" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            When enabled, your weekly 1–5 confidence and morale ratings are blurred into team-wide quarterly median bands when reviewed by senior leadership. Individual dips are never weaponized.
+          </p>
+<div class="p-space-sm rounded-lg bg-[#CCFBF1]/40 flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">psychology_alt</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-primary-container">Safety Protocol Active:</strong> Vikram Mehta cannot share raw morale trend charts in departmental slide decks.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Column (5 cols): Calibration Protocol & Data Ownership -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Calibration De-identification Spotlight Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">fingerprint_off</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Calibration De-Identification</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            During bi-annual calibration meetings, review panels analyze competencies, not gossip. Read how our scrubbers protect you:
+          </p>
+<!-- Interactive Explainer Pill Badges -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface">Author identities stripped from peer reviews</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface">Gendered and identifying pronouns normalized</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface">Direct quotes delivered in aggregate synthesis</span>
+</div>
+</div>
+<div class="mt-2 pt-space-xs flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-outline font-mono">ISO/IEC 27701 COMPLIANT</span>
+<button class="font-label-sm text-label-sm text-primary-container font-semibold hover:underline flex items-center gap-0.5">
+              Review Pipeline Logs <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- 4. Data Rights & Export Card -->
+<div class="bg-gradient-to-br from-surface-container-lowest to-surface-container-low rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">folder_zip</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Data Rights &amp; Export</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">Portable</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            You hold total custody of your professional record. Export your full history or inspect who has examined your profile.
+          </p>
+<div class="flex flex-col gap-space-sm pt-1">
+<button class="w-full h-10 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-semibold rounded-lg flex items-center justify-center gap-space-xs transition-all shadow-sm" id="exportDossierBtn">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Performance Dossier (PDF/JSON)</span>
+</button>
+<button class="w-full h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md font-medium rounded-lg flex items-center justify-center gap-space-xs transition-colors" id="viewAuditLogBtn">
+<span class="material-symbols-outlined text-outline text-[18px]">history</span>
+<span>View Access &amp; Inspection Audit Log</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Access Activity Timeline (Audit Proof) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[22px]">manage_search</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Real-Time Access Transparency Log</h3>
+<span class="font-body-sm text-body-sm text-outline">Verified audit log of people who reviewed your records in the past 30 days</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-primary-container font-medium bg-[#CCFBF1] px-2.5 py-1 rounded-full flex items-center gap-1 self-start sm:self-auto">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+          Immutable Audit Stream
+        </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Log Item 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Vikram Mehta (Manager)</span>
+<span class="font-body-sm text-body-sm text-outline">Today, 10:14 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Viewed: Weekly Check-in &amp; Active Blockers during 1:1 prep.</p>
+<div class="flex items-center gap-1 mt-1 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+<span>Authorized by Role</span>
+</div>
+</div>
+<!-- Log Item 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Pooja Nair (Director)</span>
+<span class="font-body-sm text-body-sm text-outline">Oct 24, 4:30 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Viewed: Q3 Team Aggregate OKR roll-up (Anonymized view).</p>
+<div class="flex items-center gap-1 mt-1 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+<span>Aggregated Read Only</span>
+</div>
+</div>
+<!-- Log Item 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">HR People Ops (Automated)</span>
+<span class="font-body-sm text-body-sm text-outline">Oct 18, 9:00 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compiled: Calibration Dossier with de-identification scrubber applied.</p>
+<div class="flex items-center gap-1 mt-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Cryptographically Scrubbed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast (Hidden by default, triggered on interactive buttons) -->
+<div class="fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-sm transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none" id="toastNotification">
+<span class="material-symbols-outlined text-inverse-primary text-[20px]" id="toastIcon">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">Changes saved successfully</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Micro-interaction handlers
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+
+    function showToast(message, icon = 'check_circle') {
+      if (!toast) return;
+      toastMsg.textContent = message;
+      toastIcon.textContent = icon;
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }, 3200);
+    }
+
+    // Toggle Listeners
+    const toggleWeekly = document.getElementById('toggle-weekly-checkin');
+    if (toggleWeekly) {
+      toggleWeekly.addEventListener('change', (e) => {
+        const state = e.target.checked ? 'restricted to direct manager' : 'accessible to skip-level';
+        showToast(`Weekly check-in privacy updated: ${state}`);
+      });
+    }
+
+    const toggleWins = document.getElementById('toggle-wins-public');
+    if (toggleWins) {
+      toggleWins.addEventListener('change', (e) => {
+        const state = e.target.checked ? 'broadcasted to company channels' : 'stored privately in your Wins journal';
+        showToast(`Wins & Kudos visibility updated: ${state}`);
+      });
+    }
+
+    const toggleMorale = document.getElementById('toggle-blur-morale');
+    if (toggleMorale) {
+      toggleMorale.addEventListener('change', (e) => {
+        const state = e.target.checked ? 'active (trends blurred to skip-level)' : 'standard visibility';
+        showToast(`Morale trend protection: ${state}`);
+      });
+    }
+
+    // Radio Listeners
+    const radioInputs = document.querySelectorAll('input[name="wins-sharing-dest"]');
+    radioInputs.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        if (e.target.value === 'slack') {
+          showToast('Kudos set to stream to #shoutouts Slack channel');
+        } else {
+          showToast('Kudos set to private portfolio only');
+        }
+      });
+    });
+
+    // Buttons
+    const exportBtn = document.getElementById('exportDossierBtn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        showToast('Generating encrypted dossier package (PDF & JSON)...', 'hourglass_top');
+        setTimeout(() => {
+          showToast('Dossier downloaded securely to your device', 'file_download_done');
+        }, 1200);
+      });
+    }
+
+    const auditBtn = document.getElementById('viewAuditLogBtn');
+    if (auditBtn) {
+      auditBtn.addEventListener('click', () => {
+        showToast('Full 365-day access log queried and verified', 'verified');
+      });
+    }
+
+    const pledgeBtn = document.getElementById('viewPledgeDocBtn');
+    if (pledgeBtn) {
+      pledgeBtn.addEventListener('click', () => {
+        showToast('Opening PMG Psychological Safety Charter...', 'policy');
+      });
+    }
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#8a4cfc","inverse-primary":"#80d5cb","on-primary-fixed":"#00201d","on-secondary-container":"#fffbff","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb598","tertiary-fixed":"#ffdbce","surface-container-lowest":"#ffffff","primary-fixed-dim":"#80d5cb","error-container":"#ffdad6","on-surface":"#0b1c30","surface-container":"#e5eeff","surface-tint":"#006a63","on-primary":"#ffffff","secondary-fixed":"#eaddff","surface-container-low":"#eff4ff","error":"#ba1a1a","primary-fixed":"#9cf2e8","primary-container":"#0f766e","on-primary-container":"#a3faef","surface-bright":"#f8f9ff","tertiary-container":"#9c573a","surface-variant":"#d3e4fe","secondary":"#712ae2","on-error-container":"#93000a","outline-variant":"#bdc9c6","on-secondary":"#ffffff","inverse-surface":"#213145","on-background":"#0b1c30","on-secondary-fixed":"#25005a","on-error":"#ffffff","surface-container-high":"#dce9ff","primary":"#005c55","tertiary":"#7f4025","outline":"#6e7977","on-tertiary-fixed":"#370e00","on-secondary-fixed-variant":"#5a00c6","secondary-fixed-dim":"#d2bbff","surface-dim":"#cbdbf5","on-surface-variant":"#3e4947","surface-container-highest":"#d3e4fe","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#72361b","background":"#f8f9ff","on-tertiary-container":"#ffe5db","on-primary-fixed-variant":"#00504a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem","space-xl":"2rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"headline-sm":["Inter"],"pill-tag":["Inter"],"headline-lg":["Inter"],"display-lg":["Inter"],"title-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"]},fontSize:{"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}],"pill-tag":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[248px] bg-surface-container-lowest border-r border-[#E2E8F0] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-[#E2E8F0]"><img alt="PMG Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XLIvSLXm27pPW0j3ciblrAyAXB51gEaNkixrTJGzSXRPQ7yGDv_hShomgPmqPh_zh12uOOUWofittX2SrVoWZstPSII2e6nvTnXj-5-vhwglp7v_F-Yws77G2pWE-DC0kt03fwUF8RWU8XTIIIL8azZyX1DmqEfrbISsO3GSeQLeuCBvzaUJ89Rdxk0ojlljvz0r-CNUoZMSdn-P4j_h0wBghffDy-74Zg2wkWdkHrCA"/><span class="font-title-md text-title-md text-on-surface tracking-tight font-semibold">PMG</span></div><nav class="p-space-sm space-y-1 flex-1" data-active-classes="bg-[#EDE9FE]/50 text-secondary font-semibold"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="goals" href="#">Goals</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="check-ins" href="#">Check-ins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="blockers" href="#">Blockers</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="wins" href="#">Wins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="one-on-ones" href="#">1:1s</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="feedback" href="#">Feedback</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reviews" href="#">Reviews</a></nav></div><div class="p-space-sm border-t border-[#E2E8F0] bg-surface-container-lowest"><div class="p-space-sm rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-colors"><div class="flex items-center gap-space-sm"><img alt="Ananya Rao" class="w-9 h-9 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/><div class="flex-1 min-w-0"><div class="flex items-center justify-between gap-1"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ananya Rao</span><span class="px-1.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">Employee</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Product Analyst</p></div></div><div class="mt-space-sm pt-space-xs border-t border-[#E2E8F0]/60 flex items-center justify-between"><a class="font-label-sm text-label-sm text-primary-container hover:underline inline-flex items-center gap-0.5" href="#"><span>Switch role</span><span class="material-symbols-outlined text-[14px]">swap_horiz</span></a></div></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-surface-container-lowest border-b border-[#E2E8F0] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm w-full max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-lowest border border-[#E2E8F0] rounded-lg text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search goals, team, blockers..." type="text"/><div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container-low text-on-surface-variant border border-[#E2E8F0] rounded text-[11px] font-medium font-mono">⌘K</kbd></div></div></div><div class="flex items-center gap-space-md"><button class="h-10 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-medium rounded-lg flex items-center gap-space-xs transition-all shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Check in</span></button><button aria-label="Notifications" class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-[#BE123C] rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center pl-space-xs border-l border-[#E2E8F0]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-[1440px] mx-auto w-full px-gutter py-space-lg space-y-space-lg">
+<!-- Header & Context Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-sm border-b-0">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">1:1 with Vikram Mehta</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container-high text-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+              Live sync · 5 items ready
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">calendar_today</span>
+<span>Bi-weekly Sync · Thursday, 19 Nov 2026 · 4:00 PM – 4:45 PM</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container text-primary font-semibold">Starts in 25 mins</span>
+</p>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-space-sm">
+<button class="h-10 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>History &amp; Notes</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-space-xs transition-colors" onclick="document.getElementById('new-topic-input').focus()" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add topic</span>
+</button>
+<a class="h-10 px-space-md bg-primary-container hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md font-medium rounded-lg flex items-center gap-space-xs transition-all shadow-sm" href="https://meet.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">video_call</span>
+<span>Join Google Meet</span>
+</a>
+</div>
+</div>
+<!-- Collaborative Participant Bar -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md flex-wrap">
+<!-- Ananya (You) -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-1.5 rounded-lg shadow-sm">
+<img alt="Ananya Rao" class="w-8 h-8 rounded-full object-cover" data-alt="Warm studio headshot portrait of Ananya Rao, early thirties South Asian woman product analyst wearing neat professional teal shirt against soft neutral office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX5G1Nbar086v-At-TdZjGnc2RVFEmIOkq-m6u8SftvZxS-Se3JQ-JsqMFx1nPIL1TRaWbLJaZm9iOBesXEdbge0im_eozYo32P-DgrF3ZidGSx9fL3RtZyoIm5dtOPNryNTVdqx61amvR9mp_fg_DXXepk52XYEWqzv-dooN3vkulHnHAhjAxeLpC6QEMCSymSeSLrouWTuux_7hRZBdyjkaf5TpKPShY4-5OUnAM"/>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ananya Rao</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">(You)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Product Analyst</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">sync_alt</span>
+<!-- Vikram (Manager) -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-1.5 rounded-lg shadow-sm">
+<img alt="Vikram Mehta" class="w-8 h-8 rounded-full object-cover" data-alt="Friendly professional corporate portrait of Vikram Mehta, engineering and product lead manager in late thirties with glasses in modern architectural office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2-CGtTZaaBK1bjvqYTv3CPd6M5dFeu8kHrXgqwaz59KaCFwcqG-CwpbMdi51nEABUi1YQI8HotyKyCwO8wgOh0rrf8iazJG6Lz3BY2804wG5SghNkIk9pz5x_SOAovyNA0FRqOraudaF5kSmVWX_ygfU6-5sIXyAyGi4VB0_a5S_GDmcCznMorOp1mcG57sIXa9TBLmBcbOgOLntnKIpX-feQAvnGHYViqwyu1PA0"/>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Vikram Mehta</span>
+<span class="font-pill-tag text-pill-tag px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">Manager</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engineering &amp; Product Manager</p>
+</div>
+</div>
+<!-- Cadence info -->
+<div class="hidden lg:flex items-center gap-2 pl-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">schedule</span>
+<span>Bi-weekly · 45 mins · Next scheduled: <strong>3 Dec 2026</strong></span>
+</div>
+</div>
+<!-- Weekly Pulse Check Metric -->
+<div class="flex items-center gap-2 bg-surface-container-lowest px-space-sm py-1.5 rounded-lg shadow-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary font-label-md text-label-md font-bold">
+            4/5
+          </div>
+<div class="text-left leading-tight">
+<div class="font-label-sm text-label-sm text-on-surface font-medium flex items-center gap-1">
+<span>Weekly Mood &amp; Sentiment</span>
+<span class="material-symbols-outlined text-[14px] text-primary">sentiment_satisfied</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[220px]">Good (Productive &amp; balanced)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Area: 2 Column Layout (8 cols + 4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (8 cols) -->
+<div class="lg:col-span-8 space-y-space-lg">
+<!-- 1. Auto-Queued from Weekly Check-in & System -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[22px]">auto_awesome</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Auto-Queued from Weekly Check-in &amp; System</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">3 system items</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Derived directly from your recent blocker updates, goal progress telemetry, and team activity logs.
+          </p>
+<div class="space-y-space-md">
+<!-- Item A: Blocker escalation -->
+<div class="bg-surface-bright rounded-xl p-space-md shadow-sm space-y-space-sm transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<input class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer" id="item-blocker" type="checkbox"/>
+<div>
+<label class="font-title-md text-title-md text-on-surface cursor-pointer font-semibold block leading-tight" for="item-blocker">
+                      Escalate Data Platform dashboard access (Arjun Nair blocked for 6 days)
+                    </label>
+<div class="flex items-center gap-2 mt-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 font-pill-tag text-pill-tag px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+                        Blocker · 6 days open
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">flag</span>
+                        Goal: <span class="font-medium text-on-surface">Reduce onboarding drop-off from 38% to 25%</span>
+</span>
+</div>
+</div>
+</div>
+<button class="shrink-0 h-8 px-space-sm rounded-lg bg-error-container hover:bg-error text-on-error-container hover:text-on-error font-label-sm text-label-sm font-medium flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">send_time_extension</span>
+<span>Ask Vikram to unblock</span>
+</button>
+</div>
+<!-- Context quote -->
+<div class="ml-6 pl-space-sm bg-surface-container-low rounded-lg p-2.5">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                  “Arjun accepted request but no updates since Friday. We need this telemetry to analyze step-3 drop-offs before next release.”
+                </p>
+<div class="mt-1 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Assigned to: <strong class="text-on-surface">Ananya Rao</strong></span>
+<span class="text-outline">Reported in check-in #42</span>
+</div>
+</div>
+</div>
+<!-- Item B: Goal milestone win -->
+<div class="bg-surface-bright rounded-xl p-space-md shadow-sm space-y-space-sm transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<input class="mt-1 w-4 h-4 rounded text-secondary-container focus:ring-0 cursor-pointer" id="item-win" type="checkbox"/>
+<div>
+<label class="font-title-md text-title-md text-on-surface cursor-pointer font-semibold block leading-tight" for="item-win">
+                      Celebrate Checklist v1 canary rollout (+9% completion rate)
+                    </label>
+<div class="flex items-center gap-2 mt-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 font-pill-tag text-pill-tag px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-semibold">
+<span class="material-symbols-outlined text-[13px]">military_tech</span>
+                        Win / Milestone
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">rocket_launch</span>
+                        Goal: <span class="font-medium text-on-surface">Launch self-serve onboarding checklist</span>
+</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium px-2 py-1 bg-secondary-fixed/50 rounded-md">
+                  Ready to review
+                </span>
+</div>
+<!-- Evidence -->
+<div class="ml-6 flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+<span class="inline-flex items-center gap-1 text-primary-container font-medium hover:underline cursor-pointer">
+<span class="material-symbols-outlined text-[15px]">link</span>
+                  [JIRA-482] Canary rollouts
+                </span>
+<span class="inline-flex items-center gap-1 text-primary-container font-medium hover:underline cursor-pointer">
+<span class="material-symbols-outlined text-[15px]">analytics</span>
+                  Mixpanel live funnel metric (+9.2%)
+                </span>
+</div>
+</div>
+<!-- Item C: Unplanned work acknowledgment -->
+<div class="bg-surface-bright rounded-xl p-space-md shadow-sm space-y-space-sm transition-all hover:shadow-md">
+<div class="flex items-start gap-space-sm">
+<input class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer" id="item-unplanned" type="checkbox"/>
+<div class="flex-1">
+<label class="font-title-md text-title-md text-on-surface cursor-pointer font-semibold block leading-tight" for="item-unplanned">
+                    Acknowledge Tier-2 support escalation coverage during 18 Nov outage
+                  </label>
+<div class="flex items-center gap-2 mt-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 font-pill-tag text-pill-tag px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-semibold">
+<span class="material-symbols-outlined text-[13px]">emergency</span>
+                      Unplanned work
+                    </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                      Credited toward <strong class="text-on-surface">Beyond-the-job rubric tier</strong>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+                    Stepped in during P0 outage to diagnose 14 affected customer sessions and draft remediation incident summary.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Collaborative Talking Points -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">forum</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Collaborative Talking Points</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock_open</span>
+              Shared with Vikram
+            </span>
+</div>
+<!-- Add new topic form -->
+<div class="bg-surface-container-low rounded-xl p-space-sm space-y-2">
+<div class="flex items-center gap-space-sm">
+<input class="flex-1 h-10 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container" id="new-topic-input" placeholder="Add a discussion topic or question for Vikram..." type="text"/>
+<button class="h-10 px-space-md bg-primary-container hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add</span>
+</button>
+</div>
+<div class="flex items-center justify-between px-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+                Both participants can see and edit agenda items in real time
+              </span>
+<span>Markdown supported</span>
+</div>
+</div>
+<div class="space-y-space-md">
+<!-- Item 1 (Added by Vikram) -->
+<div class="bg-surface-bright rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<input class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer" id="item-topic-1" type="checkbox"/>
+<div class="space-y-1">
+<label class="font-title-md text-title-md text-on-surface font-semibold cursor-pointer block leading-tight" for="item-topic-1">
+                      Review Q4 performance rubric calibration &amp; timeline for Mid-Year review draft
+                    </label>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<img alt="Vikram" class="w-5 h-5 rounded-full object-cover" data-alt="Small thumbnail avatar of Vikram Mehta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS3XxAvoA_nFxVUcPJU-OI5wG0pIOnSiVBhCoSoFcXQRapDHWHvAHcUdpAdu7Gd6ajUVq3S8729YnqiaW35X-QGrfv7QzPFS2qXRVypLPCwLHE7ifjrwB_oTS6OpZUN3bqP_Y2KPAhEBq5zu5_Hi7dI7LlLKzXBlvgG-e0wQvrmHuHRiEUPob0s3CMAKTGdBHn4onSqF6ITGTPl3FYlRmneB4s8UaXuRM2JJH6K5Of"/>
+<span>Added by <strong class="text-on-surface">Vikram Mehta</strong> · Yesterday at 5:30 PM</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-on-surface">more_horiz</span>
+</div>
+<!-- Attachment link & comment preview -->
+<div class="ml-6 space-y-2">
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span>Mid-Year Review criteria (Due 27 Nov)</span>
+</a>
+<div class="bg-surface-container-low rounded-lg p-2.5 text-on-surface-variant font-body-sm text-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline mt-0.5">chat_bubble_outline</span>
+<p>
+<strong class="text-on-surface">Vikram:</strong> “Let's make sure your self-appraisal draft cites the onboarding teardown and analytics instrumentation wins.”
+                  </p>
+</div>
+</div>
+</div>
+<!-- Item 2 (Added by Ananya) -->
+<div class="bg-surface-bright rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<input class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer" id="item-topic-2" type="checkbox"/>
+<div class="space-y-1">
+<label class="font-title-md text-title-md text-on-surface font-semibold cursor-pointer block leading-tight" for="item-topic-2">
+                      Career Growth: Discuss Senior Analyst leveling competencies &amp; cross-functional scope
+                    </label>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<img alt="Ananya" class="w-5 h-5 rounded-full object-cover" data-alt="Small thumbnail avatar of Ananya Rao" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvRXXmWj9k2AGEYMoV_KL27IC5TaHdsjKLXz1lmp4gE9HaTPUvhUH8ZMglajJAbwihugG3yMHIvFqYIfSXikIXZLazE0IyMfuxprbVMRMh0dGqDMRtUSq8AlPS48Q1ENDkPIg3YV_f1V-2xqdeaPTBw9zWMopScoch7cL0v65kzcyXCggqNjmr-Dn7nif0BYSrwhKaeCWYw5UYIDfceuhg1uM7cMKfB5mBTYU85_j5"/>
+<span>Added by <strong class="text-on-surface">Ananya Rao</strong> · Added 2 days ago</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-on-surface">more_horiz</span>
+</div>
+<!-- Private Note to self box -->
+<div class="ml-6 bg-surface-container p-2.5 rounded-lg flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">lock</span>
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-primary font-semibold block">Private note to self (Only visible to you):</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    “Reference the data SLA negotiation with Arjun as evidence of proactive stakeholder management and organizational leadership.”
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Action Items & Commitments from Last 1:1 -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">task_alt</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Action Items &amp; Commitments from Last 1:1 (5 Nov)</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 of 3 completed</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Item 1 (Done) -->
+<div class="bg-surface-bright rounded-lg p-space-md flex items-center justify-between gap-space-sm opacity-80">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-outline line-through truncate">
+                  Ananya to draft onboarding teardown spec and share in Figma
+                </span>
+</div>
+<span class="shrink-0 font-label-sm text-label-sm text-primary bg-surface-container px-2 py-0.5 rounded-full">
+                Done 12 Nov
+              </span>
+</div>
+<!-- Item 2 (In Progress) -->
+<div class="bg-surface-bright rounded-lg p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer" id="action-2" type="checkbox"/>
+<label class="font-body-md text-body-md text-on-surface truncate cursor-pointer font-medium" for="action-2">
+                  Vikram to check in with Data Platform lead regarding pipeline priority
+                </label>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-pill-tag text-pill-tag px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-semibold">
+                  In progress
+                </span>
+<span class="font-body-sm text-body-sm text-outline">Owner: Vikram</span>
+</div>
+</div>
+<!-- Item 3 (New) -->
+<div class="bg-surface-bright rounded-lg p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer" id="action-3" type="checkbox"/>
+<label class="font-body-md text-body-md text-on-surface truncate cursor-pointer font-medium" for="action-3">
+                  Create 2-3 recovery options for onboarding A/B test timeline
+                </label>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-pill-tag text-pill-tag px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-semibold">
+                  Due 26 Nov
+                </span>
+<span class="font-body-sm text-body-sm text-outline">Owner: Ananya</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT SIDEBAR RAIL (4 cols) -->
+<div class="lg:col-span-4 space-y-space-lg">
+<!-- 1. Quick Goal Snapshot Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">track_changes</span>
+<span>Goal Snapshot</span>
+</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium hover:underline cursor-pointer">View all (3)</span>
+</div>
+<div class="space-y-space-md">
+<!-- Goal 1 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate max-w-[190px]">Reduce onboarding drop-off</span>
+<span class="font-pill-tag text-pill-tag px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">At risk</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>34.1% actual</span>
+<span>25.0% target</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 45%;"></div>
+</div>
+</div>
+<!-- Goal 2 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate max-w-[190px]">Launch self-serve checklist</span>
+<span class="font-pill-tag text-pill-tag px-2 py-0.5 rounded-full bg-surface-container-high text-primary-container font-semibold">On track</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>60% complete</span>
+<span>Canary active</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+<!-- Goal 3 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate max-w-[190px]">Improve analytics telemetry</span>
+<span class="font-pill-tag text-pill-tag px-2 py-0.5 rounded-full bg-surface-container-high text-primary-container font-semibold">On track</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>80% complete</span>
+<span>4 of 5 events</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 80%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Past 1:1 Trends & Feedback Pulse -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<h3 class="font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">insights</span>
+<span>Cadence Health &amp; Pulse</span>
+</h3>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-bright p-space-sm rounded-lg text-center">
+<span class="font-headline-sm text-headline-sm text-primary block">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sync attendance (Past 4)</span>
+</div>
+<div class="bg-surface-bright p-space-sm rounded-lg text-center">
+<span class="font-headline-sm text-headline-sm text-primary block">4.0 / 5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sentiment (3 wk avg)</span>
+</div>
+</div>
+<!-- Trend sparkline SVG -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Sentiment Trend</span>
+<span class="font-medium text-primary">Stable &amp; Positive</span>
+</div>
+<div class="h-10 w-full flex items-end">
+<svg class="w-full h-8" fill="none" viewbox="0 0 200 40">
+<path class="text-primary-container" d="M5 25 Q 50 15, 100 20 T 195 10" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle class="fill-primary-container" cx="5" cy="25" r="3"></circle>
+<circle class="fill-primary-container" cx="70" cy="20" r="3"></circle>
+<circle class="fill-primary-container" cx="135" cy="18" r="3"></circle>
+<circle class="fill-primary-container" cx="195" cy="10" r="3.5"></circle>
+</svg>
+</div>
+<div class="flex justify-between text-[11px] text-outline font-mono">
+<span>29 Oct</span>
+<span>05 Nov</span>
+<span>12 Nov</span>
+<span>Today</span>
+</div>
+</div>
+<div class="pt-space-xs text-on-surface-variant font-body-sm text-body-sm flex items-center justify-between">
+<span>Pending action items:</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">1 Vikram · 1 Ananya</span>
+</div>
+</div>
+<!-- 3. Private Notes Scratchpad for Ananya -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span>
+<span>Private Scratchpad</span>
+</h3>
+<span class="inline-flex items-center gap-1 font-pill-tag text-pill-tag px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">
+<span class="material-symbols-outlined text-[12px]">lock</span>
+              Private
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Notes only visible to you. Vikram cannot view this scratchpad.
+          </p>
+<textarea class="w-full p-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface border-0 focus:outline-none focus:ring-1 focus:ring-primary-container resize-none leading-relaxed" id="private-scratchpad" rows="4">• Mention that Arjun is helpful but slammed with warehouse migration.
+• Ask about budget for Amplitude deep-dive training.
+• Clarify if self-appraisal needs peer reviews from UX research.</textarea>
+<div class="flex items-center justify-between pt-1">
+<span class="text-[11px] text-outline" id="save-status">Auto-saved 2m ago</span>
+<button class="h-8 px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-sm text-label-sm font-medium transition-colors" onclick="document.getElementById('save-status').innerText = 'Saved just now'" type="button">
+              Save draft
+            </button>
+</div>
+</div>
+<!-- 4. Meeting Cadence & Integrations -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<h3 class="font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">settings</span>
+<span>Sync Settings</span>
+</h3>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">event_available</span>
+                Google Calendar
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Synced ✓</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">forum</span>
+                Slack DM auto-recap
+              </span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-body-sm font-body-sm text-outline">
+<a class="hover:text-primary hover:underline" href="#">Reschedule sync</a>
+<a class="hover:text-error hover:underline" href="#">Cancel session</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for adding item in client-side preview
+  const inputEl = document.getElementById('new-topic-input');
+  if (inputEl) {
+    inputEl.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' && this.value.trim() !== '') {
+        alert('Topic "' + this.value.trim() + '" added to collaborative agenda!');
+        this.value = '';
+      }
+    });
+  }
+</script></main></div></body></html>

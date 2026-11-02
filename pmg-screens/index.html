@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PMG screens</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; padding: 40px 16px; font-family: Inter, system-ui, sans-serif; background: #f7f8f8; color: #14211f; }
+  main { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 4px; } p { color: #5b6b68; margin: 0 0 32px; }
+  h2 { font-size: 15px; margin: 28px 0 10px; } h2 span { font-weight: 400; color: #5b6b68; margin-left: 8px; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px; }
+  li { background: #fff; border: 1px solid #e2e7e6; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+  a { color: #0f766e; font-weight: 600; text-decoration: none; } a:hover { text-decoration: underline; }
+  code { font-size: 12px; color: #5b6b68; }
+</style></head>
+<body><main>
+  <h1>PMG screens</h1>
+  <p>Static HTML snapshots of every screen, captured from the running app on demo data. Buttons don't act; links move between screens. <a href="employee-all-screens.html">All employee screens in one page</a></p>
+  
+    <section><h2>Sign-in <span>Signed out</span></h2><ul>
+      <li><a href="sign-in.html">Sign in</a><code>/</code></li>
+    </ul></section>
+    <section><h2>Employee <span>Aman Kumar</span></h2><ul>
+      <li><a href="employee-home.html">Home</a><code>/home</code></li>
+      <li><a href="employee-goals.html">Goals (Work)</a><code>/goals</code></li>
+      <li><a href="employee-goals-personal.html">Goals (Personal)</a><code>/goals?tab=personal</code></li>
+      <li><a href="employee-goal-new.html">Create a goal</a><code>/goals/new</code></li>
+      <li><a href="employee-goal-detail.html">Goal detail</a><code>/goals/25</code></li>
+      <li><a href="employee-goals-milestones.html">Milestones</a><code>/goals/milestones</code></li>
+      <li><a href="employee-work.html">My work</a><code>/work</code></li>
+      <li><a href="employee-checkins.html">Check-ins</a><code>/checkins</code></li>
+      <li><a href="employee-checkin-new.html">New check-in</a><code>/checkins?new=1</code></li>
+      <li><a href="employee-blockers.html">Blockers</a><code>/blockers</code></li>
+      <li><a href="employee-blocker-raise.html">Raise a blocker</a><code>/blockers?drawer=1</code></li>
+      <li><a href="employee-wins.html">Wins</a><code>/wins</code></li>
+      <li><a href="employee-one-on-ones.html">1:1s</a><code>/one-on-ones</code></li>
+      <li><a href="employee-feedback.html">Feedback</a><code>/feedback</code></li>
+      <li><a href="employee-feedback-give.html">Give feedback</a><code>/feedback?give=venkatesh</code></li>
+      <li><a href="employee-self-review.html">Self-appraisal</a><code>/reviews/self</code></li>
+      <li><a href="employee-privacy.html">Privacy settings</a><code>/settings/privacy</code></li>
+      <li><a href="employee-chat.html">Chat</a><code>/chat</code></li>
+    </ul></section>
+    <section><h2>Manager <span>Venkatesh TR (Muru Arjunan for the whole org)</span></h2><ul>
+      <li><a href="manager-team.html">Team</a><code>/team</code></li>
+      <li><a href="manager-team-org.html">Team (whole org)</a><code>/team?scope=org</code></li>
+      <li><a href="manager-team-member.html">Team member</a><code>/team/aman</code></li>
+      <li><a href="manager-approvals.html">Approvals</a><code>/approvals</code></li>
+      <li><a href="manager-approval-detail.html">Goal approval</a><code>/approvals/88</code></li>
+      <li><a href="manager-blockers.html">Blockers (waiting on me)</a><code>/blockers?tab=waiting</code></li>
+      <li><a href="manager-one-on-ones.html">1:1 with Aman</a><code>/one-on-ones?with=aman</code></li>
+      <li><a href="manager-reviews.html">Reviews</a><code>/reviews</code></li>
+      <li><a href="manager-review-person.html">Manager review</a><code>/reviews/manager/aman</code></li>
+      <li><a href="manager-chat.html">Chat</a><code>/chat</code></li>
+    </ul></section>
+    <section><h2>HR <span>Priyadarshini S</span></h2><ul>
+      <li><a href="hr-overview.html">Overview</a><code>/hr</code></li>
+      <li><a href="hr-company-goals.html">Company goals</a><code>/hr/goals</code></li>
+      <li><a href="hr-review-cycles.html">Review cycles</a><code>/hr/cycles</code></li>
+      <li><a href="hr-calibration.html">Calibration</a><code>/hr/calibration</code></li>
+      <li><a href="hr-people.html">People</a><code>/hr/people</code></li>
+      <li><a href="hr-integrations.html">Integrations</a><code>/hr/integrations</code></li>
+      <li><a href="hr-chat.html">Chat</a><code>/chat</code></li>
+    </ul></section>
+</main></body></html>

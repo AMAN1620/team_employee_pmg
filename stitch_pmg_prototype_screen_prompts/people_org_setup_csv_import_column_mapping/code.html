@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#8a4cfc","inverse-primary":"#80d5cb","on-primary-fixed":"#00201d","on-secondary-container":"#fffbff","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb598","tertiary-fixed":"#ffdbce","surface-container-lowest":"#ffffff","primary-fixed-dim":"#80d5cb","error-container":"#ffdad6","on-surface":"#0b1c30","surface-container":"#e5eeff","surface-tint":"#006a63","on-primary":"#ffffff","secondary-fixed":"#eaddff","surface-container-low":"#eff4ff","error":"#ba1a1a","primary-fixed":"#9cf2e8","primary-container":"#0f766e","on-primary-container":"#a3faef","surface-bright":"#f8f9ff","tertiary-container":"#9c573a","surface-variant":"#d3e4fe","secondary":"#712ae2","on-error-container":"#93000a","outline-variant":"#bdc9c6","on-secondary":"#ffffff","inverse-surface":"#213145","on-background":"#0b1c30","on-secondary-fixed":"#25005a","on-error":"#ffffff","surface-container-high":"#dce9ff","primary":"#005c55","tertiary":"#7f4025","outline":"#6e7977","on-tertiary-fixed":"#370e00","on-secondary-fixed-variant":"#5a00c6","secondary-fixed-dim":"#d2bbff","surface-dim":"#cbdbf5","on-surface-variant":"#3e4947","surface-container-highest":"#d3e4fe","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#72361b","background":"#f8f9ff","on-tertiary-container":"#ffe5db","on-primary-fixed-variant":"#00504a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem","space-xl":"2rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"headline-sm":["Inter"],"pill-tag":["Inter"],"headline-lg":["Inter"],"display-lg":["Inter"],"title-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"]},fontSize:{"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}],"pill-tag":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[248px] bg-surface-container-lowest border-r border-[#E2E8F0] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-[#E2E8F0]"><img alt="PMG Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XLIvSLXm27pPW0j3ciblrAyAXB51gEaNkixrTJGzSXRPQ7yGDv_hShomgPmqPh_zh12uOOUWofittX2SrVoWZstPSII2e6nvTnXj-5-vhwglp7v_F-Yws77G2pWE-DC0kt03fwUF8RWU8XTIIIL8azZyX1DmqEfrbISsO3GSeQLeuCBvzaUJ89Rdxk0ojlljvz0r-CNUoZMSdn-P4j_h0wBghffDy-74Zg2wkWdkHrCA"/><span class="font-title-md text-title-md text-on-surface tracking-tight font-semibold">PMG</span></div><nav class="p-space-sm space-y-1 flex-1" data-active-classes="bg-[#EDE9FE]/50 text-secondary font-semibold"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="goals" href="#">Goals</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="check-ins" href="#">Check-ins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="blockers" href="#">Blockers</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="wins" href="#">Wins</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="one-on-ones" href="#">1:1s</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="feedback" href="#">Feedback</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reviews" href="#">Reviews</a></nav></div><div class="p-space-sm border-t border-[#E2E8F0] bg-surface-container-lowest"><div class="p-space-sm rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-colors"><div class="flex items-center gap-space-sm"><img alt="Ananya Rao" class="w-9 h-9 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/><div class="flex-1 min-w-0"><div class="flex items-center justify-between gap-1"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ananya Rao</span><span class="px-1.5 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">Employee</span></div><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Product Analyst</p></div></div><div class="mt-space-sm pt-space-xs border-t border-[#E2E8F0]/60 flex items-center justify-between"><a class="font-label-sm text-label-sm text-primary-container hover:underline inline-flex items-center gap-0.5" href="#"><span>Switch role</span><span class="material-symbols-outlined text-[14px]">swap_horiz</span></a></div></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-surface-container-lowest border-b border-[#E2E8F0] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm w-full max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-lowest border border-[#E2E8F0] rounded-lg text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search goals, team, blockers..." type="text"/><div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container-low text-on-surface-variant border border-[#E2E8F0] rounded text-[11px] font-medium font-mono">⌘K</kbd></div></div></div><div class="flex items-center gap-space-md"><button class="h-10 px-space-md bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-medium rounded-lg flex items-center gap-space-xs transition-all shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Check in</span></button><button aria-label="Notifications" class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-[#BE123C] rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center pl-space-xs border-l border-[#E2E8F0]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-[#E2E8F0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5GnO1gNUp5_uAnlhADbeyLT61ev1IwpV57vT_sbmlbpFG8wms6EVrr46HwaPVS1vg592jPW8Dvxgw9vt6oDvz-b8MomZg0ReP5nM5rwQxlxPNbixYTcPAw6vEw8RKyfd7CPQ3MWnknfXNsm7s8fxodLX4it9NkUqULr2ev-XvIX6RmibBaSbTpoDxJ3fwKZ0pY4L9wddonUjwWXg1EVe2uSeb8HUoooAVb7l6h3Y1"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-margin py-space-xl flex flex-col gap-space-xl">
+<!-- Header / Context Navigation -->
+<header class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Settings &amp; Administration</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary-container font-semibold">People &amp; Organization Data</span>
+</nav>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">People &amp; Org Setup · Roster Sync &amp; CSV Import</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Upload or synchronize company employee roster, reporting lines, departments, and leveling bands into PMG core directory.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm self-start lg:self-auto">
+<button class="h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md shadow-sm transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+<span>Sample Template (.CSV)</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md shadow-sm transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">sync</span>
+<span>Sync via HRIS</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface rounded-lg font-label-md text-label-md shadow-sm transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Import History</span>
+</button>
+</div>
+</header>
+<!-- Stepper / Process Flow -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<!-- Step 1 (Completed) -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg bg-surface-container-low/70">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Step 1</span>
+<span class="px-1.5 py-0.2 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">Completed</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface truncate">Upload File</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">312 records detected</p>
+</div>
+</div>
+<!-- Step 2 (Active) -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg bg-surface-container-low relative">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 font-label-md text-label-md font-semibold">
+            2
+          </div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Step 2</span>
+<span class="px-1.5 py-0.2 rounded-full font-pill-tag text-pill-tag bg-[#EDE9FE] text-[#7C3AED]">Active Step</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-semibold truncate">Map Columns</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Review 14 column definitions</p>
+</div>
+</div>
+<!-- Step 3 (Pending) -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg opacity-60">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center shrink-0 font-label-md text-label-md">
+            3
+          </div>
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 3</span>
+<p class="font-title-md text-title-md text-on-surface truncate">Validation &amp; Error Check</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Tree &amp; email consistency</p>
+</div>
+</div>
+<!-- Step 4 (Pending) -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg opacity-60">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center shrink-0 font-label-md text-label-md">
+            4
+          </div>
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 4</span>
+<p class="font-title-md text-title-md text-on-surface truncate">Confirm &amp; Sync</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Commit into active directory</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Workspace Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Mapping Workspace (8 Cols) -->
+<section class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- File Intelligence Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-[#DCFCE7] text-[#15803D] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">table_chart</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-semibold">pmg_employee_roster_q3_fy27.csv</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">312 rows detected · 14 columns present · 100% UTF-8 Compliant</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-[#CCFBF1]/50 px-space-md py-space-xs rounded-full self-start sm:self-auto">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">86% Confidence Auto-Match</span>
+</div>
+</div>
+<!-- Attention Banner -->
+<div class="bg-[#FEF3C7] rounded-xl p-space-md flex items-start gap-space-md">
+<span class="material-symbols-outlined text-[#B45309] text-[22px] shrink-0 mt-0.5">notification_important</span>
+<div class="flex-1 min-w-0">
+<h4 class="font-title-md text-title-md text-[#92400E]">Action Required: 2 columns need manual configuration</h4>
+<p class="font-body-sm text-body-sm text-[#B45309] mt-0.5">12 attributes were matched with certainty. Please map <span class="font-semibold">custom_tribe</span> and confirm the relationship mapping for <span class="font-semibold">skip_mgr_email</span>.</p>
+</div>
+</div>
+<!-- Column Mapping Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface">Data Mapping Workspace</span>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">14 of 14 Fields Defined</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Unmapped only</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low/40 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Source CSV Header</th>
+<th class="py-space-sm px-space-md">Row 1 Preview</th>
+<th class="py-space-sm px-space-md w-[280px]">Destination Field</th>
+<th class="py-space-sm px-space-md">Requirement &amp; Rule</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1: emp_id -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs font-mono font-medium text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[16px]">key</span>
+<span>emp_id</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+<span class="bg-surface-container-low px-2 py-0.5 rounded font-mono text-[11px] text-on-surface">EMP-2041</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">PMG Employee ID</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">lock</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">Mandatory Unique Key</span>
+</td>
+</tr>
+<!-- Row 2: full_name -->
+<tr class="hover:bg-surface-container-low/30 transition-colors bg-surface-container-low/10">
+<td class="py-space-md px-space-md">
+<span class="font-mono font-medium text-on-surface">full_name</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Corporate headshot profile photo of Indian woman professional with warm studio lighting and neutral teal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPOJhvmnTz70Kr4o0yjDxtgzD9_WA7zRhqP1Zia30kQtq7m45DjvyCXoOLQgotrKmLbDSddrjgBcHR76Y3fAwBJwqsLtgCAsRLz88Rk5C76XjSvH-C6lZ4WdXqie1t6wUAbtKddxTdKaoaq3CF6zleYT9Y7R28e7THC4wEj9ZHCaoV08pGZKZ0ZTZXTlYky3unnkZTeFE6nl-cFcb7fxBMb9fosVr4VgfKe6yKGicq"/>
+<span class="text-on-surface font-medium">Ananya Rao</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Full Name</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container-high text-on-surface-variant">Mandatory String</span>
+</td>
+</tr>
+<!-- Row 3: work_email -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-mono font-medium text-on-surface">work_email</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-mono text-[12px]">
+                    ananya.rao@acmelabs.com
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Work Email (SSO Auth)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#CCFBF1] text-[#0F766E]">Primary Identifier</span>
+</td>
+</tr>
+<!-- Row 4: job_title -->
+<tr class="hover:bg-surface-container-low/30 transition-colors bg-surface-container-low/10">
+<td class="py-space-md px-space-md">
+<span class="font-mono font-medium text-on-surface">job_title</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">
+                    Product Analyst
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Role / Job Title</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">Text</span>
+</td>
+</tr>
+<!-- Row 5: department -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-mono font-medium text-on-surface">department</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">
+                    Product &amp; Engineering
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Department (Org Unit)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container-high text-on-surface-variant">Select Org Group</span>
+</td>
+</tr>
+<!-- Row 6: manager_email -->
+<tr class="hover:bg-surface-container-low/30 transition-colors bg-surface-container-low/10">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs font-mono font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">account_tree</span>
+<span>manager_email</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-mono text-[12px]">
+                    vikram.mehta@acmelabs.com
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Manager Email (Reports To)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">Hierarchy Linked (100%)</span>
+</td>
+</tr>
+<!-- Row 7: level_band -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-mono font-medium text-on-surface">level_band</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">
+                    L4 - Senior IC
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">PMG Leveling Tier</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">Enum Level Band</span>
+</td>
+</tr>
+<!-- Row 8: hire_date -->
+<tr class="hover:bg-surface-container-low/30 transition-colors bg-surface-container-low/10">
+<td class="py-space-md px-space-md">
+<span class="font-mono font-medium text-on-surface">hire_date</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-mono text-[12px]">
+                    2023-04-15
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Tenure Start Date</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">ISO Date</span>
+</td>
+</tr>
+<!-- Row 9: location_pod -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-mono font-medium text-on-surface">location_pod</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">
+                    Bangalore HQ / Hybrid
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Location / Office Pod</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">Geographic Tag</span>
+</td>
+</tr>
+<!-- Row 10: fte_status -->
+<tr class="hover:bg-surface-container-low/30 transition-colors bg-surface-container-low/10">
+<td class="py-space-md px-space-md">
+<span class="font-mono font-medium text-on-surface">fte_status</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">
+                    Full-Time
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Employment Contract Type</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">Enum</span>
+</td>
+</tr>
+<!-- Row 11: user_slack_id -->
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-mono font-medium text-on-surface">user_slack_id</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-mono text-[12px]">
+                    U04XYZ891
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[#15803D] text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Integration ID (Slack)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-on-surface-variant">Optional System ID</span>
+</td>
+</tr>
+<!-- Row 12: custom_tribe (MANUAL ATTENTION) -->
+<tr class="bg-[#FEF3C7]/40 hover:bg-[#FEF3C7]/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs font-mono font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[#B45309] text-[18px]">warning</span>
+<span>custom_tribe</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface font-medium">
+                    Core Commerce / Checkout
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="relative">
+<select class="w-full h-9 pl-space-sm pr-8 bg-surface-container-lowest text-on-surface rounded-lg font-label-md text-label-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none">
+<option selected="" value="tribe_pod">Tribe / Pod Structure</option>
+<option value="org_unit">Sub-Department Unit</option>
+<option value="tag">Custom Group Tag</option>
+<option value="ignore">Do Not Import</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309]">Needs Mapping Check</span>
+</td>
+</tr>
+<!-- Row 13: skip_mgr_email (MANUAL ATTENTION) -->
+<tr class="bg-[#FEF3C7]/40 hover:bg-[#FEF3C7]/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs font-mono font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[#B45309] text-[18px]">warning</span>
+<span>skip_mgr_email</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-mono text-[12px]">
+                    pooja.nair@acmelabs.com
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="relative">
+<select class="w-full h-9 pl-space-sm pr-8 bg-surface-container-lowest text-on-surface rounded-lg font-label-md text-label-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none">
+<option selected="" value="skip_level">Skip-level Manager (2-up)</option>
+<option value="matrix_mgr">Matrix / Dotted-line Lead</option>
+<option value="ignore">Do Not Import</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#FEF3C7] text-[#B45309]">Hierarchy Validator</span>
+</td>
+</tr>
+<!-- Row 14: notes_internal -->
+<tr class="hover:bg-surface-container-low/30 transition-colors bg-surface-container-low/10">
+<td class="py-space-md px-space-md">
+<span class="font-mono text-outline line-through">notes_internal</span>
+</td>
+<td class="py-space-md px-space-md text-outline truncate max-w-[140px]">
+                    H2 Promo track candidate
+                  </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between bg-surface-container-low/50 px-space-sm py-1.5 rounded-lg text-outline">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">do_not_disturb_on</span>
+<span class="font-label-md text-label-md">Ignore / Do Not Import</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-surface-container text-outline">Skipped Field</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Right Column: Validation & Pre-Flight Diagnostics (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Pre-Flight Health Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[22px]">health_and_safety</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pre-Flight Check</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full font-pill-tag text-pill-tag bg-[#DCFCE7] text-[#15803D]">Pass Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live parsing analysis against existing enterprise tenant structure.</p>
+<!-- Metrics Bento Breakdown -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total Records</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">312</span>
+<span class="font-label-sm text-label-sm text-outline">Employees in file</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">New Hires</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold">+14</span>
+<span class="font-label-sm text-label-sm text-primary">New accounts</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Updates</span>
+<span class="font-headline-md text-headline-md text-secondary font-semibold">298</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Profiles synced</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Required Missing</span>
+<span class="font-headline-md text-headline-md text-[#15803D] font-semibold">0</span>
+<span class="font-label-sm text-label-sm text-[#15803D]">Zero blockers</span>
+</div>
+</div>
+<!-- Hierarchy Integrity Tree Check -->
+<div class="p-space-md bg-surface-container-low/60 rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">account_tree</span>
+<span>Org Hierarchy Tree Check</span>
+</span>
+<span class="material-symbols-outlined text-[#15803D] text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Single root node confirmed: <strong>CEO (EMP-1001)</strong>. No circular reporting references or orphaned leads detected.</p>
+<!-- Inline SVG Tree Visualizer -->
+<div class="w-full bg-surface-container-lowest p-space-sm rounded-lg mt-space-xs flex items-center justify-center">
+<svg class="w-full h-16 text-primary-container" fill="none" stroke="currentColor" viewbox="0 0 280 64">
+<!-- Root Node -->
+<circle cx="140" cy="14" fill="#0F766E" r="6" stroke="none"></circle>
+<text fill="#0F172A" font-size="8" font-weight="600" text-anchor="middle" x="140" y="8">CEO (Root)</text>
+<!-- Trunk Lines -->
+<line stroke="#CBD5E1" stroke-width="1.5" x1="140" x2="140" y1="20" y2="34"></line>
+<line stroke="#CBD5E1" stroke-width="1.5" x1="60" x2="220" y1="34" y2="34"></line>
+<!-- Branches -->
+<line stroke="#CBD5E1" stroke-width="1.5" x1="60" x2="60" y1="34" y2="44"></line>
+<line stroke="#CBD5E1" stroke-width="1.5" x1="140" x2="140" y1="34" y2="44"></line>
+<line stroke="#CBD5E1" stroke-width="1.5" x1="220" x2="220" y1="34" y2="44"></line>
+<!-- Level 2 Nodes -->
+<rect fill="#E2E8F0" height="14" rx="4" stroke="none" width="36" x="42" y="44"></rect>
+<text fill="#0F172A" font-size="7" text-anchor="middle" x="60" y="54">Eng (148)</text>
+<rect fill="#E2E8F0" height="14" rx="4" stroke="none" width="36" x="122" y="44"></rect>
+<text fill="#0F172A" font-size="7" text-anchor="middle" x="140" y="54">Prod (84)</text>
+<rect fill="#E2E8F0" height="14" rx="4" stroke="none" width="36" x="202" y="44"></rect>
+<text fill="#0F172A" font-size="7" text-anchor="middle" x="220" y="54">GTM (80)</text>
+</svg>
+</div>
+</div>
+<!-- Warnings Log -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[#B45309] text-[18px] shrink-0 mt-0.5">info</span>
+<div class="flex-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">2 Date Normalizations Applied</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rows #41 and #119 contained "15/04/2023" format. Auto-converted safely to ISO 8601 (YYYY-MM-DD).</p>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<button class="w-full h-11 bg-primary-container hover:bg-[#115E59] active:scale-[0.99] text-on-primary font-label-md text-label-md font-semibold rounded-lg flex items-center justify-center gap-space-xs shadow-sm transition-all" type="button">
+<span>Proceed to Validation &amp; Review</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-full h-9 bg-transparent hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded-lg flex items-center justify-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset Column Mappings</span>
+</button>
+</div>
+</div>
+<!-- HRIS Auto-Sync Teaser Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Automate Roster Sync</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Switch to real-time webhook sync</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Connect BambooHR, Workday, or Darwinbox to automatically propagate promotions, manager reassignments, and new hires weekly.
+          </p>
+<div class="pt-space-xs">
+<button class="font-label-md text-label-md text-secondary hover:underline inline-flex items-center gap-1 font-semibold" type="button">
+<span>Configure HRIS Connector</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- System Safety Note -->
+<div class="px-space-md py-space-sm text-on-surface-variant font-body-sm text-body-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">shield</span>
+<span>Role updates will trigger automated notification audits to Admin team.</span>
+</div>
+</aside>
+</div>
+</div>
+</div></main></div></body></html>
