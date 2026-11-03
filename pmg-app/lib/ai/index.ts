@@ -1,6 +1,6 @@
 import { anthropicKey } from "./key";
-import { checkGoalQualityRules, draftAppraisalRules, sortCheckinRules } from "./fallback";
-import type { AppraisalDraft, AppraisalGoal, CheckinContext, CheckinInput, EvidenceItem, GoalQuality, GoalText, MilestoneSpec, PlanGoalSpec, SortedItem } from "./types";
+import { agentReplyRules, checkGoalQualityRules, draftAppraisalRules, sortCheckinRules, suggestMilestonesRules } from "./fallback";
+import type { AppraisalDraft, AppraisalGoal, CheckinContext, CheckinInput, EvidenceItem, GoalQuality, GoalText, MilestoneGoal, MilestoneSpec, PlanGoalSpec, SortedItem, SuggestedMilestone } from "./types";
 
 export type * from "./types";
 
@@ -78,4 +78,31 @@ export async function writePlanGoals(goals: PlanGoalSpec[]): Promise<Map<string,
     }
   }
   return out;
+}
+
+/** Milestones (with tasks) for a goal: Claude when it's on, else a plan / build / roll-out split of the goal's dates. */
+export async function suggestMilestones(goal: MilestoneGoal): Promise<{ milestones: SuggestedMilestone[]; source: "ai" | "rules" }> {
+  if (aiEnabled()) {
+    try {
+      const { suggestMilestonesClaude } = await import("./claude");
+      const milestones = await suggestMilestonesClaude(goal);
+      if (milestones.length) return { milestones, source: "ai" };
+    } catch (e) {
+      console.warn("[pmg] Claude milestone suggestion failed, using rules:", (e as Error).message);
+    }
+  }
+  return { milestones: suggestMilestonesRules(goal), source: "rules" };
+}
+
+/** The goal agent's answer to free text it has no flow for: Claude with the person's goals as context, else a pointer to what it can do. */
+export async function agentReply(name: string, context: string, transcript: string, question: string): Promise<{ text: string; source: "ai" | "rules" }> {
+  if (aiEnabled()) {
+    try {
+      const { agentReplyClaude } = await import("./claude");
+      return { text: await agentReplyClaude(name, context, transcript, question), source: "ai" };
+    } catch (e) {
+      console.warn("[pmg] Claude agent reply failed, using rules:", (e as Error).message);
+    }
+  }
+  return { text: agentReplyRules(), source: "rules" };
 }

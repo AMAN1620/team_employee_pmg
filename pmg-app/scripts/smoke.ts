@@ -117,7 +117,7 @@ demo(async (p) => {
   await p.waitForLoadState("networkidle");
   await p.getByRole("button", { name: "Mark resolved" }).last().click();
   await p.waitForLoadState("networkidle");
-  await as(p, "anshika", "/goals");
+  await as(p, "anshika", "/goals?tab=weekly");
   await p.click("a:has-text('Take 26 Simkey Phase 3 issues')");
   await p.waitForURL(/\/goals\/\d+$/);
   await check(p, "days blocked recorded on the goal", "Resolved by Poonam Ramesh in 1 day");
@@ -178,17 +178,17 @@ demo(async (p) => {
 
 // 8. Aman never writes goals: PMG plans his weeks from Jira, he asks Venkatesh to approve, Venkatesh approves or edits.
 demo(async (p) => {
-  await as(p, "aman", "/goals");
+  await as(p, "aman", "/goals?tab=weekly");
   await check(p, "weeks planned from Jira, this week drafted", "Ask Venkatesh to approve");
   await check(p, "overdue feature re-planned", "Due 30 Oct · now 11 Nov");
-  await as(p, "aman", "/goals?q=2026-07-01&m=2026-08-01");
+  await as(p, "aman", "/goals?tab=weekly&q=2026-07-01&m=2026-08-01");
   await check(p, "past months rebuilt from Jira", "Accomplished in August");
   await as(p, "aman", "/work");
   await check(p, "tickets synced from Jira", "Across Chat Memory");
   await p.click("button:has-text('Sync now')");
   await p.waitForURL(/synced=\d+/, { timeout: 120_000 });
   await check(p, "live Jira sync from the page", /Synced \d+ tickets/);
-  await as(p, "aman", "/goals");
+  await as(p, "aman", "/goals?tab=weekly");
   await p.click("button:has-text('Ask Venkatesh to approve')");
   await p.waitForURL(/done=requested/);
   await check(p, "Aman sends this week for approval", "Your manager gets it in chat");
@@ -202,7 +202,7 @@ demo(async (p) => {
   await p.click("button:has-text('Save and approve')");
   await p.waitForURL(/done=approved/);
   await check(p, "Venkatesh rewords and approves next week", "Relevant-context PoC done and latency numbers shared");
-  await as(p, "aman", "/goals");
+  await as(p, "aman", "/goals?tab=weekly");
   await check(p, "Aman sees both weeks approved", /Week 5[\s\S]{0,200}Approved/);
 });
 
@@ -239,7 +239,7 @@ demo(async (p) => {
 // Success team (it goes to Gayathri, its head), sees the drafted email (outside messages are mocked), and Gayathri
 // passes it to Poonam.
 demo(async (p) => {
-  await as(p, "aman", "/goals");
+  await as(p, "aman", "/goals?tab=weekly");
   await check(p, "PMG nudges about a goal that's behind", "Is something in the way?");
   await p.getByRole("link", { name: "Raise a blocker" }).first().click();
   await p.fill("input[name=title]", "Can't load-test memory lookups without staging access");

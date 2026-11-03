@@ -40,3 +40,7 @@ export type PlanGoalSpec = {
 export type GoalText = { title: string; doneWhen: string };
 /** One task to turn into a milestone: what is achieved once it's done. */
 export type MilestoneSpec = { key: string; task: string; feature: string; epic: string | null };
+
+/** A milestone PMG suggests for a goal: dates inside the goal's, and the tasks that get it done. */
+export type SuggestedMilestone = { title: string; start: string; end: string; tasks: string[] };
+export type MilestoneGoal = { title: string; why: string; start: string; end: string; existing: string[] };

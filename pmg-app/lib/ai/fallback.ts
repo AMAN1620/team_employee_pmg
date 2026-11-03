@@ -1,8 +1,8 @@
 // Rule-based versions of the AI features, used when no ANTHROPIC_API_KEY is set or a model call fails.
-import { addDays } from "@/lib/time";
+import { addDays, daysBetween } from "@/lib/time";
 import { capitalize, overlap, sentences, tokens } from "@/lib/logic/text";
 import type {
-  AppraisalDraft, AppraisalGoal, CheckinContext, CheckinInput, EvidenceItem, GoalQuality, SortedItem,
+  AppraisalDraft, AppraisalGoal, CheckinContext, CheckinInput, EvidenceItem, GoalQuality, MilestoneGoal, SortedItem, SuggestedMilestone,
 } from "./types";
 
 const UNPLANNED = /\b(covered|outage|escalation|firefight|on[- ]call|incident|helped|training|support rota|unplanned)\b/i;
@@ -128,4 +128,29 @@ export function checkGoalQualityRules(goal: { title: string; target?: string | n
     else suggestion = `${capitalize(goal.title.replace(/^improve\s+/i, "Improve "))} from <baseline> to <target> by <date>`;
   }
   return { ok: issues.length === 0, issues, suggestion };
+}
+
+/**
+ * Three milestones that split the goal's dates into plan, build and roll-out, with starter tasks for each. Generic on
+ * purpose: the person renames them. Milestones the goal already has are skipped by title.
+ */
+export function suggestMilestonesRules(goal: MilestoneGoal): SuggestedMilestone[] {
+  const span = Math.max(3, daysBetween(goal.start, goal.end) + 1);
+  const cut = (n: number) => addDays(goal.start, Math.round((span * n) / 3));
+  const what = goal.title.replace(/\.$/, "").replace(/^\w/, (c) => c.toLowerCase());
+  const phases: SuggestedMilestone[] = [
+    { title: "Scope and plan", start: goal.start, end: addDays(cut(1), -1),
+      tasks: [`Agree what "done" means for ${what}`, "List the work and who's needed", "Share the plan with your manager"] },
+    { title: "Build the main pieces", start: cut(1), end: addDays(cut(2), -1),
+      tasks: ["Deliver the first working version", "Get review feedback and fix it", "Check progress against the plan"] },
+    { title: "Roll out and measure", start: cut(2), end: goal.end,
+      tasks: ["Release it to the people who use it", "Measure the result", "Write up what changed and what's next"] },
+  ];
+  const have = new Set(goal.existing.map((t) => t.toLowerCase()));
+  return phases.filter((m) => !have.has(m.title.toLowerCase()));
+}
+
+/** What the goal agent says to a question it has no rule for, when Claude is off. */
+export function agentReplyRules(): string {
+  return "I can raise a blocker, set up a 1:1, draft your weekly update, plan milestones for a goal, mark a task done, or tell you what's due. Try one of the buttons below, or say it in your own words.";
 }

@@ -10,7 +10,7 @@ import { blockerAction } from "@/app/actions/app";
 import { BlockerForm } from "@/components/blockers/BlockerForm";
 import { BlockerPrompts } from "@/components/blockers/BlockerPrompts";
 
-const ORIGIN: Record<string, string> = { goal: "from a goal", milestone: "from a milestone", overdue_task: "from an overdue task", nudge: "after PMG's nudge", checkin: "from a check-in" };
+const ORIGIN: Record<string, string> = { goal: "from a goal", milestone: "from a milestone", overdue_task: "from an overdue task", nudge: "after PMG's nudge", checkin: "from a check-in", agent: "from a chat with the goal agent" };
 const CHANNEL_ICON: Record<string, string> = { slack: "tag", google_chat: "forum", email: "mail", calendar: "calendar_month" };
 
 type SP = { tab?: string; drawer?: string; goalId?: string; milestoneId?: string; origin?: string; raised?: string; open?: string };

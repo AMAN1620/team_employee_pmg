@@ -4,7 +4,7 @@ import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import { z } from "zod";
 import { anthropicKey } from "./key";
 import { findOwner } from "./fallback";
-import type { AppraisalDraft, AppraisalGoal, CheckinContext, CheckinInput, EvidenceItem, GoalText, MilestoneSpec, PlanGoalSpec, SortedItem } from "./types";
+import type { AppraisalDraft, AppraisalGoal, CheckinContext, CheckinInput, EvidenceItem, GoalText, MilestoneGoal, MilestoneSpec, PlanGoalSpec, SortedItem, SuggestedMilestone } from "./types";
 
 const MODEL = "claude-opus-5-5";
 
@@ -151,4 +151,44 @@ export async function writePlanGoalsClaude(goals: PlanGoalSpec[]): Promise<Map<s
     if (keys.has(g.key) && title && title.length <= 120 && !/\b[A-Z][A-Z0-9]+-\d+\b/.test(title)) out.set(g.key, { title, doneWhen: g.done_when.trim() });
   }
   return out;
+}
+
+const SuggestSchema = z.object({
+  milestones: z.array(z.object({ title: z.string(), start: z.string(), end: z.string(), tasks: z.array(z.string()) })),
+});
+
+export async function suggestMilestonesClaude(goal: MilestoneGoal): Promise<SuggestedMilestone[]> {
+  const response = await anthropic().messages.parse({
+    model: MODEL,
+    max_tokens: 4000,
+    output_config: { effort: "low", format: zodOutputFormat(SuggestSchema) },
+    system:
+      "You break an employee's quarterly goal into milestones for a performance tool. Suggest 3 or 4 milestones in order, each an " +
+      "achieved state a manager can check (under 60 characters), with a start and end date (YYYY-MM-DD) inside the goal's dates, " +
+      "back to back without gaps. Give each milestone 2 to 4 concrete tasks (under 70 characters, starting with a verb). Use only what " +
+      "the goal says: no invented metrics, people or tools. Skip milestones the goal already has.",
+    messages: [{ role: "user", content: JSON.stringify(goal) }],
+  });
+  if (response.stop_reason !== "end_turn" || !response.parsed_output) throw new Error(`milestone suggestion stopped: ${response.stop_reason}`);
+  const inGoal = (d: string) => /^\d{4}-\d{2}-\d{2}$/.test(d) && d >= goal.start && d <= goal.end;
+  return response.parsed_output.milestones
+    .filter((m) => m.title.trim() && inGoal(m.start) && inGoal(m.end) && m.start <= m.end)
+    .map((m) => ({ title: m.title.trim(), start: m.start, end: m.end, tasks: m.tasks.map((t) => t.trim()).filter(Boolean).slice(0, 5) }));
+}
+
+export async function agentReplyClaude(name: string, context: string, transcript: string, question: string): Promise<string> {
+  const response = await anthropic().messages.create({
+    model: MODEL,
+    max_tokens: 1000,
+    output_config: { effort: "low" },
+    system:
+      `You are PMG's goal agent, chatting with ${name} inside their goals page. You see their goals for the quarter, each goal's ` +
+      "milestones (with dates) and each milestone's tasks (with progress and to-dos). Answer in at most 4 short sentences or a short " +
+      "list, in plain words, using only what the goals say. When they sound stuck, offer to raise a blocker or set up a 1:1. When they " +
+      "finish something, offer to mark it done. Never invent tasks, dates, people or numbers.",
+    messages: [{ role: "user", content: `Their goals:\n${context}\n\nRecent chat:\n${transcript}\n\n${name} asks: ${question}` }],
+  });
+  const text = response.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("\n").trim();
+  if (!text) throw new Error(`agent reply stopped: ${response.stop_reason}`);
+  return text;
 }

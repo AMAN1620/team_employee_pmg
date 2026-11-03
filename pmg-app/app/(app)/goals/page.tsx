@@ -4,9 +4,9 @@ import { Card, HealthPill, Icon, PageHeader, Pill, ProgressBar, cx, fmtDate, hea
 import { PlanBoard } from "@/components/plan/PlanBoard";
 import { PersonalBoard } from "@/components/plan/PersonalBoard";
 import { BlockerPrompts } from "@/components/blockers/BlockerPrompts";
-import { MilestoneBoard } from "@/components/plan/MilestoneBoard";
+import { QuarterGoals } from "@/components/goals/QuarterGoals";
 import { today } from "@/lib/time";
-import { getPerson, goalsFor } from "@/lib/repo";
+import { getPerson, goalsFor, listPeople } from "@/lib/repo";
 import { goalViewsFor } from "@/lib/services/views";
 
 const STATUS: Record<string, [string, "amber" | "slate" | "rose"]> = {
@@ -22,20 +22,28 @@ export default async function GoalsPage({ searchParams }: { searchParams: Promis
   const me = await requirePerson();
   const { tab, q, m, week, done } = await searchParams;
   const personal = tab === "personal";
+  const weekly = tab === "weekly";
   // Goals from the review cycle (no week, month or quarter of their own) keep their own list under Work.
   const goals = goalViewsFor(me.id).filter((g) => !g.horizon);
   const unapproved = goalsFor(me.id).filter((g) => g.status !== "approved" && !g.horizon);
   const manager = me.manager_id ? getPerson(me.manager_id)?.name.split(" ")[0] : undefined;
-  const base = personal ? "/goals?tab=personal" : "/goals";
+  const base = personal ? "/goals?tab=personal" : "/goals?tab=weekly";
+  const tab_ = (href: string, on: boolean, icon: string, label: string, tone = "bg-teal") => (
+    <Link href={href} className={cx("px-3 py-1.5 rounded-md text-label-md inline-flex items-center gap-1.5", on ? `${tone} text-white` : "text-muted hover:text-ink")}><Icon name={icon} className="text-[16px]" />{label}</Link>
+  );
   const tabs = (
     <div className="inline-flex rounded-lg border border-line bg-white p-1">
-      <Link href="/goals" className={cx("px-3 py-1.5 rounded-md text-label-md inline-flex items-center gap-1.5", !personal ? "bg-teal text-white" : "text-muted hover:text-ink")}><Icon name="work" className="text-[16px]" />Work</Link>
-      <Link href="/goals?tab=personal" className={cx("px-3 py-1.5 rounded-md text-label-md inline-flex items-center gap-1.5", personal ? "bg-violet text-white" : "text-muted hover:text-ink")}><Icon name="self_improvement" className="text-[16px]" />Personal</Link>
+      {tab_("/goals", !personal && !weekly, "flag", "Goals")}
+      {tab_("/goals?tab=personal", personal, "self_improvement", "Personal", "bg-violet")}
     </div>
   );
 
-  // Demo: Priya's work goals are quarter milestones set by her manager (lib/demo/priya-milestones.ts).
-  if (me.id === "priya" && !personal) return <MilestoneBoard today={today()} owner="you" right={tabs} />;
+  // Quarter goals → milestones → tasks → to-dos. The Jira weekly plan and review-cycle goals moved to the Weekly plan tab.
+  if (!personal && !weekly) {
+    const people = listPeople().filter((p) => p.id !== me.id).map((p) => ({ id: p.id, name: p.name, title: p.title }));
+    const boss = people.find((p) => p.id === me.manager_id) ?? null;
+    return <QuarterGoals me={{ id: me.id, name: me.name }} manager={boss} people={people} today={today()} right={tabs} />;
+  }
 
   return (
     <div>

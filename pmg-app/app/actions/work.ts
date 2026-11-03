@@ -39,7 +39,7 @@ export async function workStatusAction(f: FormData) {
 export async function tickTaskAction(f: FormData) {
   const me = await requirePerson();
   const weeks = await markTaskDone(Number(s(f, "itemId")), me.id, f.get("done") === "1");
-  const to = new URL(s(f, "back").startsWith("/") && !s(f, "back").startsWith("//") ? s(f, "back") : "/goals", "http://pmg");
+  const to = new URL(s(f, "back").startsWith("/") && !s(f, "back").startsWith("//") ? s(f, "back") : "/goals?tab=weekly", "http://pmg");
   const week = s(f, "week");
   // On the plan, follow the task when it left the week it was ticked in (done today counts in this week).
   if (week && weeks.length && !weeks.includes(week)) {
@@ -54,7 +54,7 @@ export async function tickTaskAction(f: FormData) {
 export async function requestApprovalAction(f: FormData) {
   const me = await requirePerson();
   for (const id of f.getAll("goalId")) requestApproval(Number(id), me.id);
-  back(f, "/goals", "requested");
+  back(f, "/goals?tab=weekly", "requested");
 }
 
 export async function approvePlanAction(f: FormData) {
